@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+/* Define custom font families */
+@theme {
+    --font-family-tenor: "Tenor Sans", sans-serif;
+    --font-family-sora: "Sora", sans-serif;
+
+    /* Custom color */
+    --color-primary: #00A99D;
+    --color-navbar-items: #1C1C68;
+    --color-blue: #1C1C68;
+
+    /* Custom font sizes */
+    --text-banner: 41px;
+}
+.container{
+    max-width: 1268px;
+    margin: 0 auto;
+}
+@media (max-width: 1100px) {
+    .container{
+        padding: 0 16px;
+    }
+}
