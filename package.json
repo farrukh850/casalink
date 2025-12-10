@@ -1,4 +1,17 @@
 {
+  "name": "casalink",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CasaLink - Property Listing Platform",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/input.css -o ./src/output.css --minify",
+    "dev": "tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "build": "npm run build:css",
+    "preview": "echo \"Open src/index.html in your browser\""
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.17",
     "tailwindcss": "^4.1.17"
