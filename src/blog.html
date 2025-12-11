@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./output.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casa Link</title>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div class="flex items-center justify-between w-full p-5 lg:py-6 lg:pl-10 lg:pr-12 max-w-[1366px] mx-auto">
+            <div class="flex items-center gap-4 xl:gap-15">
+                <a href="index.html"><img src="images/logo.svg" alt="Casalink"></a>
+                <nav class="hidden lg:block">
+                    <ul class="flex space-x-6 xl:space-x-16">
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light  text-primary hover:text-primary transition duration-30">Accueil</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300">Comment ça marche</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-30">FAQ</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-30">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="hidden lg:flex items-center space-x-6">
+                <a href="javascript:void(0);" class="text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-10">Je suis agent immobilier</a>
+                <a href="javascript:void(0);" class="text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-5">Connexion</a>
+            </div>
+            <button id="menu-toggle" class="lg:hidden flex flex-col gap-1.5 relative w-6 h-6 justify-center items-center">
+                <span class="block w-6 h-0.5 bg-blue transition-all duration-300 origin-center"></span>
+                <span class="block w-6 h-0.5 bg-blue transition-all duration-300 origin-center"></span>
+                <span class="block w-6 h-0.5 bg-blue transition-all duration-300 origin-center"></span>
+            </button>
+        </div>
+        <nav id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-200">
+            <div class="px-5 py-4">
+                <ul class="flex flex-col space-y-3">
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">Accueil</a></li>
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">Comment ça marche</a></li>
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">FAQ</a></li>
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">Contact</a></li>
+                    <li class="border-t border-gray-200 pt-3 mt-3">
+                        <a href="javascript:void(0);" class="block text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-10 text-center">Je suis agent immobilier</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="block text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-5 text-center">Connexion</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!--Découvrez nos articles-->
+    <section class="pt-10 pb-20 lg:pt-18 lg:pb-24">
+        <div class="container">
+            <h1 class="text-2xl lg:text-banner uppercase text-center font-family-tenor font-normal leading-10 lg:leading-14 text-blue">Découvrez nos articles</h1>
+            <div class="px-10 py-20 lg:pl-18 relative rounded-4xl bg-[url(images/blog-image.png)] bg-no-repeat bg-cover h-auto lg:h-84 overflow-hidden mt-14 flex items-center max-w-[1060px] mx-auto w-full">
+                    <div class="relative z-50">
+                        <p class="text-base font-sora leading-5 font-bold mb-3 text-white">Le 18 avril 2025</p>
+                        <h2 class="text-2xl font-sora font-light mb-5 leading-6 text-white">Ceci est un article de blog plus<br> ou moins long.</h2>
+                        <a href="javascript:void(0);" class="text-sm font-sora font-light py-3 bg-primary text-white rounded-4xl px-5.5 h-11 w-full lg:w-56 flex items-center justify-center">Lire cet article</a>
+                    </div>
+                    <div class="absolute top-0 bottom-0 left-0 right-0">
+                        <img src="images/gradient-blue.svg" alt="Gradient" class="h-full object-cover w-full lg:w-auto">
+                    </div>
+                </div>
+            <div class="max-w-[1060px] mx-auto w-full">
+                <div class="grid grid-cols-12 gap-7.5 max-w-[1057px] mx-auto mt-12">
+                    <div class="col-span-12 sm:col-span-6 lg:col-span-3 relative h-[338px] overflow-hidden">
+                        <img src="images/discover-icon1.png" alt="Discover Icon" class="w-full h-full object-cover rounded-3xl">
+                        <div class="absolute left-7 bottom-16 z-50 right-5">
+                            <div class="text-base font-sora font-bold text-white mb-3">Le 18 avril 2025</div>
+                            <h3 class="text-sm leading-5 text-white font-light mb-6 max-w-38 w-full">Ceci est un article de blog plus ou moins long.</h3>
+                        </div>
+                        <img src="images/gradient-bottom.svg" alt="Gradient" class="absolute bottom-0 left-0 right-0 w-full object-cover h-full lg:h-auto rounded-3xl">
+                    </div>
+                    <div class="col-span-12 sm:col-span-6 lg:col-span-3 relative h-[338px] overflow-hidden">
+                        <img src="images/discover-icon2.png" alt="Discover Icon" class="w-full h-full object-cover rounded-3xl">
+                        <div class="absolute left-7 bottom-16 z-50 right-5">
+                            <div class="text-base font-sora font-bold text-white mb-3">Le 18 avril 2025</div>
+                            <h3 class="text-sm leading-5 text-white font-light mb-6 max-w-38 w-full">Ceci est un article de blog plus ou moins long.</h3>
+                        </div>
+                        <img src="images/gradient-bottom.svg" alt="Gradient" class="absolute bottom-0 left-0 right-0 w-full object-cover h-full lg:h-auto rounded-3xl">
+                    </div>
+                    <div class="col-span-12 sm:col-span-6 lg:col-span-3 relative h-[338px] overflow-hidden">
+                        <img src="images/discover-icon3.png" alt="Discover Icon" class="w-full h-full object-cover rounded-3xl">
+                        <div class="absolute left-7 bottom-16 z-50 right-5">
+                            <div class="text-base font-sora font-bold text-white mb-3">Le 18 avril 2025</div>
+                            <h3 class="text-sm leading-5 text-white font-light mb-6 max-w-38 w-full">Ceci est un article de blog plus ou moins long.</h3>
+                        </div>
+                        <img src="images/gradient-bottom.svg" alt="Gradient" class="absolute bottom-0 left-0 right-0 w-full object-cover h-full lg:h-auto rounded-3xl">
+                    </div>
+                    <div class="col-span-12 sm:col-span-6 lg:col-span-3 relative h-[338px] overflow-hidden">
+                        <img src="images/discover-icon4.png" alt="Discover Icon" class="w-full h-full object-cover rounded-3xl">
+                        <div class="absolute left-7 bottom-16 z-50 right-5">
+                            <div class="text-base font-sora font-bold text-white mb-3">Le 18 avril 2025</div>
+                            <h3 class="text-sm leading-5 text-white font-light mb-6 max-w-38 w-full">Ceci est un article de blog plus ou moins long.</h3>
+                        </div>
+                        <img src="images/gradient-bottom.svg" alt="Gradient" class="absolute bottom-0 left-0 right-0 w-full object-cover h-full lg:h-auto rounded-3xl">
+                    </div>
+                    <div class="col-span-12 sm:col-span-6 lg:col-span-3 relative h-[338px] overflow-hidden">
+                        <img src="images/discover-icon1.png" alt="Discover Icon" class="w-full h-full object-cover rounded-3xl">
+                        <div class="absolute left-7 bottom-16 z-50 right-5">
+                            <div class="text-base font-sora font-bold text-white mb-3">Le 18 avril 2025</div>
+                            <h3 class="text-sm leading-5 text-white font-light mb-6 max-w-38 w-full">Ceci est un article de blog plus ou moins long.</h3>
+                        </div>
+                        <img src="images/gradient-bottom.svg" alt="Gradient" class="absolute bottom-0 left-0 right-0 w-full object-cover h-full lg:h-auto rounded-3xl">
+                    </div>
+                    <div class="col-span-12 sm:col-span-6 lg:col-span-3 relative h-[338px] overflow-hidden">
+                        <img src="images/discover-icon2.png" alt="Discover Icon" class="w-full h-full object-cover rounded-3xl">
+                        <div class="absolute left-7 bottom-16 z-50 right-5">
+                            <div class="text-base font-sora font-bold text-white mb-3">Le 18 avril 2025</div>
+                            <h3 class="text-sm leading-5 text-white font-light mb-6 max-w-38 w-full">Ceci est un article de blog plus ou moins long.</h3>
+                        </div>
+                        <img src="images/gradient-bottom.svg" alt="Gradient" class="absolute bottom-0 left-0 right-0 w-full object-cover h-full lg:h-auto rounded-3xl">
+                    </div>
+                    <div class="col-span-12 sm:col-span-6 lg:col-span-3 relative h-[338px] overflow-hidden">
+                        <img src="images/discover-icon3.png" alt="Discover Icon" class="w-full h-full object-cover rounded-3xl">
+                        <div class="absolute left-7 bottom-16 z-50 right-5">
+                            <div class="text-base font-sora font-bold text-white mb-3">Le 18 avril 2025</div>
+                            <h3 class="text-sm leading-5 text-white font-light mb-6 max-w-38 w-full">Ceci est un article de blog plus ou moins long.</h3>
+                        </div>
+                        <img src="images/gradient-bottom.svg" alt="Gradient" class="absolute bottom-0 left-0 right-0 w-full object-cover h-full lg:h-auto rounded-3xl">
+                    </div>
+                    <div class="col-span-12 sm:col-span-6 lg:col-span-3 relative h-[338px] overflow-hidden">
+                        <img src="images/discover-icon4.png" alt="Discover Icon" class="w-full h-full object-cover rounded-3xl">
+                        <div class="absolute left-7 bottom-16 z-50 right-5">
+                            <div class="text-base font-sora font-bold text-white mb-3">Le 18 avril 2025</div>
+                            <h3 class="text-sm leading-5 text-white font-light mb-6 max-w-38 w-full">Ceci est un article de blog plus ou moins long.</h3>
+                        </div>
+                        <img src="images/gradient-bottom.svg" alt="Gradient" class="absolute bottom-0 left-0 right-0 w-full object-cover h-full lg:h-auto rounded-3xl">
+                    </div>
+                </div>
+                <div class="flex items-center justify-center space-x-4.5 mt-18">
+                    <button class="cursor-pointer"><img src="images/caret-left.svg" alt="Caret Left"></button>
+                    <button class="font-family-sora cursor-pointer text-base text-primary">1</button>
+                    <button class="font-family-sora cursor-pointer text-base text-blue">2</button>
+                    <button class="font-family-sora cursor-pointer text-base text-blue">3</button>
+                    <button class="font-family-sora cursor-pointer text-base text-blue">4</button>
+                    <button class="cursor-pointer"><img src="images/caret-right.svg" alt="Caret Right"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="relative ">
+        <div class="container relative z-50">
+            <div class="grid grid-cols-3 space-x-30 items-center">
+                <div class="col-span-3 md:col-span-1">
+                    <a href="javascript:void(0);"><img src="images/logo-white.svg" alt="Casalink"></a>
+                </div>
+                <div class="col-span-3 md:col-span-1">
+                    <ul class="flex flex-col gap-2 lg:gap-5">
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light leading-5 text-white hover:text-primary transition duration-300">Accueil</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light leading-5 text-white hover:text-primary transition duration-300">Comment ça marche</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light leading-5 text-white hover:text-primary transition duration-300">FAQ</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light leading-5 text-white hover:text-primary transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-3 md:col-span-1 mt-5 lg:mt-0">
+                    <h2 class="text-lg md:text-2xl text-white font-family-tenor uppercase leading-8">Suivez-nous sur les <br> réseaux</h2>
+                    <ul class="flex items-center gap-2.5 mt-2.5">
+                        <li><a href="javascript:void(0);"><img src="images/fb.svg" alt="Facebook Icon"></a></li>
+                        <li><a href="javascript:void(0);"><img src="images/insta.svg" alt="Instagram Icon"></a></li>
+                        <li><a href="javascript:void(0);"><img src="images/youtube.svg" alt="Youtube Icon"></a></li>
+                        <li><a href="javascript:void(0);"><img src="images/linkedin.svg" alt="Linkedin Icon"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex items-center justify-center pb-7.5 mt-5 lg:mt-0">
+                <small class="text-sm leading-5 font-sora text-white/50">Copyright © 2025 <a href="javascript:void(0);">CasaLink</a> | <a href="javascript:void(0);">Vie privée</a> | Website by <a href="javascript:void(0);">Flexvision</a></small>
+            </div>
+        </div>
+        <div class="absolute -top-10 left-0 right-0 bottom-0">
+            <img src="images/eclipse.svg" alt="Eclipse" class="h-full w-full object-cover">
+        </div>
+        <div class="absolute h-3/5 left-0 right-0 bottom-0 bg-blue">
+        </div>
+    </footer>
+</body>
+<script src="accordion.js"></script>
+<script src="header.js"></script>
+</html>
