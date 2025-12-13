@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./output.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casa Link</title>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div class="flex items-center justify-between w-full p-5 lg:py-6 lg:pl-10 lg:pr-12 max-w-[1366px] mx-auto">
+            <div class="flex items-center gap-4 xl:gap-15">
+                <a href="index.html"><img src="images/logo.svg" alt="Casalink"></a>
+                <nav class="hidden lg:block">
+                    <ul class="flex space-x-6 xl:space-x-16">
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light  text-primary hover:text-primary transition duration-30">Accueil</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300">Comment ça marche</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-30">FAQ</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-30">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="hidden lg:flex items-center space-x-6">
+                <a href="javascript:void(0);" class="text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-10">Je suis agent immobilier</a>
+                <a href="javascript:void(0);" class="text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-5">Connexion</a>
+            </div>
+            <button id="menu-toggle" class="lg:hidden flex flex-col gap-1.5 relative w-6 h-6 justify-center items-center">
+                <span class="block w-6 h-0.5 bg-blue transition-all duration-300 origin-center"></span>
+                <span class="block w-6 h-0.5 bg-blue transition-all duration-300 origin-center"></span>
+                <span class="block w-6 h-0.5 bg-blue transition-all duration-300 origin-center"></span>
+            </button>
+        </div>
+        <nav id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-200">
+            <div class="px-5 py-4">
+                <ul class="flex flex-col space-y-3">
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">Accueil</a></li>
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">Comment ça marche</a></li>
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">FAQ</a></li>
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">Contact</a></li>
+                    <li class="border-t border-gray-200 pt-3 mt-3">
+                        <a href="javascript:void(0);" class="block text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-10 text-center">Je suis agent immobilier</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="block text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-5 text-center">Connexion</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!--Avant de commencer, créons votre espace personnel.-->
+    <section class="relative overflow-hidden pb-25">
+        <div class="container">
+            <div class="grid grid-cols-12 items-start gap-0 lg:gap-11">
+                <div class="col-span-12 lg:col-span-4 pt-0 lg:pt-20 relative h-full">
+                    <h1 class="text-2xl lg:text-3xl font-family-tenor text-blue uppercase">C'est terminé !</h1>
+                    <p class="font-family-sora text-base font-light mt-5 lg:mt-3 text-[#AFAFAF]">Votre bien va être proposé à toutes les agences de notre répertoire. Elles ont 48h pour postuler à la vente de celui-ci en répondant à nos questions. Vous pourrez alors comparer leurs offres de façon claire, sans la moindre obligation.</p>
+                    <div class="absolute -left-40 -bottom-30 w-120 h-120 hidden lg:block">
+                        <img src="images/comparison-step-four-image.svg" alt="Comparison Icon" class="w-full h-full object-contain">
+                    </div>
+                </div>
+                <div class="col-span-12 lg:col-span-8 mb-9">
+                    <div class="py-10 px-5 lg:py-14 lg:px-24 rounded-4xl bg-blue/10 mt-5 lg:mt-0 min-h-[543px]">
+                        <div class="flex items-center gap-2">
+                            <span class="min-w-[21px] h-[21px] rounded-full bg-blue"></span>
+                            <div class="border border-blue w-full"></div>
+                            <span class="min-w-[21px] h-[21px] rounded-full bg-blue"></span>
+                            <div class="border border-blue w-full"></div>
+                            <span class="min-w-[21px] h-[21px] rounded-full bg-blue"></span>
+                            <div class="border border-blue w-full"></div>
+                            <div class="relative w-[21px]">
+                                <span class="w-[21px] h-[21px] rounded-full bg-primary block"></span>
+                                <span class="w-[15px] h-[15px] rounded-full bg-primary block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 border-4 border-white"></span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col mt-30 items-center text-center max-w-[376px] mx-auto">
+                            <h2 class="text-xl md:text-3xl font-family-tenor text-blue uppercase">Vous recevrez une réponse par mail dans 48h</h2>
+                            <a href="javascript:void(0);" class="text-sm font-sora font-light py-3 bg-primary text-white rounded-4xl px-5.5 h-11 w-full lg:w-64 flex items-center justify-center mt-3">Retour à l'accueil
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Popup-->
+    <section class="bg-white/10 backdrop-blur-lg fixed top-0 left-0 w-full justify-center items-center z-50 h-full hidden" id="popup">
+        <div class="max-w-[848px] w-full bg-blue rounded-4xl z-100 relative h-[425px] flex items-center justify-center">
+            <div class="flex items-center justify-end absolute right-8 top-5">
+                <button class="popup-close cursor-pointer"><img src="images/close.svg" alt="Close"></button>
+            </div>
+            <div class="flex flex-col max-w-[530px] items-center text-center">
+                <h2 class="font-family-tenor text-3xl text-white uppercase mb-4.5">Que se passe-t-il ensuite ?</h2>
+                <p class="font-family-sora text-base text-white font-light mb-14">Une fois votre bien encodé, il est proposé à toutes les agences de notre répertoire. Elles ont 48h pour postuler à la vente de votre bien en répondant à nos questions. Vous pourrez alors comparer leurs offres de façon claire, sans la moindre obligation.</p>
+                <a href="javascript:void(0);" class="py-3 px-14 border border-white rounded-4xl text-sm font-family-sora leading-5 text-white hover:bg-white hover:text-blue transition duration-300">Retour</a>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="accordion.js"></script>
+<script src="header.js"></script>
+<script src="checkbox.js"></script>
+<script src="popup.js"></script>
+</html>

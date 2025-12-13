@@ -53,83 +53,63 @@
         </nav>
     </header>
 
-    <!--Avant de commencer, créons votre espace personnel.-->
-    <section class="relative overflow-hidden">
+    <!--Contact-->
+    <section class="relative overflow-hidden pb-20">
         <div class="container">
             <div class="grid grid-cols-12 items-start gap-0 lg:gap-11">
-                <div class="col-span-12 lg:col-span-4 pt-0 lg:pt-20 relative h-full">
-                    <h1 class="text-2xl lg:text-3xl font-family-tenor text-blue uppercase">Avant de commencer, créons votre espace personnel.</h1>
-                    <p class="font-family-sora text-base font-light mt-5 lg:mt-11 text-[#AFAFAF]">Dans cet espace personnel, vous pourrez suivre les propositions des agences.</p>
-                    <div class="absolute -left-60 -bottom-20 w-120 h-120 hidden lg:block">
-                        <img src="images/comparison-step-one-image.svg" alt="Comparison Icon" class="w-full h-full object-contain">
+                <div class="col-span-12 lg:col-span-4 pt-0 lg:pt-11 relative h-full">
+                    <h1 class="text-2xl lg:text-banner font-family-tenor text-blue uppercase">Vous avez la moindre question ? </h1>
+                    <p class="font-family-sora text-base font-light text-[#AFAFAF]">Nous sommes là pour vous répondre ! Appelez nous directement ou remplissez ce formulaire.</p>
+                    <div class="mt-12.5 p-14.5 w-full px- bg-gradient-to-b from-[#00A99D] to-[#1C1C68] rounded-4xl">
+                        <div class="flex flex-col items-center gap-5">
+                            <img src="images/envelope.svg" class="w-12" alt="Envelope">
+                            <a href="mailto:info@casalink.be" class="text-white text-base font-family-sora leading-5 font-light">info@casalink.be</a>
+                            <img src="images/line.svg" alt="Line">
+                            <img src="images/phone.svg" class="w-12" alt="Envelope">
+                            <a href="tel:04 000 00 00" class="text-white text-base font-family-sora leading-5 font-light">04 000 00 00</a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-span-12 lg:col-span-8 mb-9">
                     <div class="py-10 px-5 lg:py-14 lg:px-24 rounded-4xl bg-blue/10 mt-5 lg:mt-0">
-                        <div class="flex items-center gap-2">
-                            <div class="relative w-[21px]">
-                                <span class="w-[21px] h-[21px] rounded-full bg-primary block"></span>
-                                <span class="w-[15px] h-[15px] rounded-full bg-primary block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 border-4 border-white"></span>
-                            </div>
-                            <div class="border border-blue w-full"></div>
-                            <span class="min-w-[21px] h-[21px] rounded-full border border-blue"></span>
-                            <div class="border border-blue w-full"></div>
-                            <span class="min-w-[21px] h-[21px] rounded-full border border-blue"></span>
-                            <div class="border border-blue w-full"></div>
-                            <span class="min-w-[21px] h-[21px] rounded-full border border-blue"></span>
-                        </div>
-                        <form action="#" class="mt-5 lg:mt-14 flex flex-col gap-3 lg:gap-7">
+                        <form action="#" class="flex flex-col gap-3 lg:gap-7">
                             <div class="flex flex-col sm:flex-row items-start lg:items-center gap-3 lg:gap-18 justify-between">
-                                <div class="flex flex-col gap-2">
+                                <div class="flex flex-col gap-2 w-full">
                                     <label for="Nom" class="text-sm font-sora font-light">Nom</label>
-                                    <input type="text" name="Nom" id="Nom" placeholder="Smith" class="w-72 h-10 rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent bg-white transition-all duration-300 placeholder:text-[#AFAFAF]" />
+                                    <input type="text" name="Nom" id="Nom" placeholder="Smith" class="h-10 rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent bg-white transition-all duration-300 placeholder:text-[#AFAFAF] w-full">
                                 </div>
-                                <div class="flex flex-col gap-2">
+                                <div class="flex flex-col gap-2 w-full">
                                     <label for="Prénom" class="text-sm font-sora font-light">Prénom</label>
-                                    <input type="text" name="Prénom" placeholder="John" id="Prénom" class="w-72 h-10 rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent bg-white transition-all duration-300 placeholder:text-[#AFAFAF]" />
+                                    <input type="text" name="Prénom" placeholder="John" id="Prénom" class="w-full h-10 rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent bg-white transition-all duration-300 placeholder:text-[#AFAFAF]">
                                 </div>
                             </div>
                             <div class="flex flex-col sm:flex-row items-start lg:items-center gap-3 lg:gap-18 justify-between">
-                                <div class="flex flex-col gap-2">
+                                <div class="flex flex-col gap-2 w-full">
                                     <label for="Mail" class="text-sm font-sora font-light">Mail</label>
-                                    <input type="text" name="Mail" placeholder="john.smith@gmail.com" id="Mail" class="w-72 h-10 rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent bg-white transition-all duration-300 placeholder:text-[#AFAFAF]" />
+                                    <input type="text" name="Mail" placeholder="john.smith@gmail.com" id="Mail" class="w-full h-10 rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent bg-white transition-all duration-300 placeholder:text-[#AFAFAF]">
                                 </div>
-                                <div class="flex flex-col gap-2">
-                                    <div class="flex items-center gap-5">
-                                        <label for="Téléphone" class="text-sm font-sora font-light">Téléphone</label>
-                                        <img src="images/error.svg" alt="Error">
-                                    </div>
-                                    <input type="text" name="Téléphone" placeholder="0400/00.00.00" id="Téléphone" class="w-72 h-10 rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent bg-white transition-all duration-300 placeholder:text-red-300" />
+                                <div class="flex flex-col gap-2 w-full">
+                                    <label for="Téléphone" class="text-sm font-sora font-light">Téléphone</label>
+                                    <input type="text" name="Téléphone" placeholder="0400/00.00.00" id="Téléphone" class="w-full h-10 rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent bg-white transition-all duration-300">
                                 </div>
                             </div>
-                            <div class="flex flex-col sm:flex-row items-start lg:items-center gap-3 lg:gap-18 justify-between">
-                                <div class="flex flex-col gap-2">
-                                    <label for="Mot" class="text-sm font-sora font-light">Mot de passe</label>
-                                    <input type="password" name="Mot" placeholder="Mot de passe" id="Mot" class="w-72 h-10 rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent bg-white transition-all duration-300 placeholder:text-[#AFAFAF]" />
-                                </div>
-                                <div class="flex flex-col gap-2">
-                                    <label for="Confirmation" class="text-sm font-sora font-light">Confirmation de mot de passe</label>
-                                    <input type="password" name="Confirmation" placeholder="Votre mot de passe" id="Confirmation" class="w-72 text-blue h-10 rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent bg-white transition-all duration-300 placeholder:text-[#AFAFAF]" />
-                                </div>
+                            <div class="flex flex-col gap-3">
+                                <label for="Raison" class="text-sm font-sora font-light text-blue">Raison de votre demande</label>
+                                <textarea type="text" name="Raison" placeholder="Ecrivez ici la raison de votre demande" id="Raison" class="w-full h-[115px] pt-3 resize-none rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent bg-white transition-all duration-300 placeholder:text-[#AFAFAF]"></textarea>
                             </div>
                             <div class="flex items-start lg:items-center gap-4.5">
                                 <div class="custom-checkbox-wrapper relative flex-[34px] min-w-8.5">
                                     <input type="checkbox" class="hidden" id="terms-checkbox">
                                     <div class="checkbox-ui relative cursor-pointer">
                                         <span class="w-8.5 h-8.5 rounded-lg bg-white block"></span>
-                                        <span class="min-w-6 h-6 rounded-lg bg-blue absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 invisible transition-opacity duration-300"></span>
+                                        <span class="min-w-6 h-6 rounded-lg bg-blue absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 invisible transition-opacity duration-300" style="opacity: 0; visibility: hidden;"></span>
                                     </div>
                                 </div>
                                 <small class="text-[10px] text-[#AFAFAF] font-family-sora">J'accepte que Casalink conserve mes données de contact dans un but professionnel uniquement pour une durée de trois ans à dater d'aujourd'hui. En soumettant ce formulaire, vous acceptez notre déclaration de confidentialité</small>
                             </div>
-                            <div class="flex items-center gap-2">
-                                <img src="images/error.svg" alt="Error" class="w-6">
-                                <p class="text-xs text-red-400 font-family-sora font-light">Attention, réponse manquante ou incorrecte.</p>
-                            </div>
                             <div class="flex flex-col lg:flex-row items-center gap-10.5">
-                                <a href="javascript:void(0);" class="text-sm font-sora font-light py-3 bg-primary text-white rounded-4xl px-5.5 h-11 w-full lg:w-50 flex items-center justify-center">Créer mon compte
+                                <a href="javascript:void(0);" class="text-sm font-sora font-light py-3 bg-primary text-white rounded-4xl px-5.5 h-11 w-full lg:w-50 flex items-center justify-center">Envoyer
                                 </a>
-                                <p class="font-family-sora text-sm text-blue font-light">Vous avez déjà un compte ? <a href="javascript:void(0)" class="underline">Connectez-vous ici</a>.</p>
                             </div>
                         </form>
                     </div>

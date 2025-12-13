@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./output.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casa Link</title>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div class="flex items-center justify-between w-full p-5 lg:py-6 lg:pl-10 lg:pr-12 max-w-[1366px] mx-auto">
+            <div class="flex items-center gap-4 xl:gap-15">
+                <a href="index.html"><img src="images/logo.svg" alt="Casalink"></a>
+                <nav class="hidden lg:block">
+                    <ul class="flex space-x-6 xl:space-x-16">
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light  text-primary hover:text-primary transition duration-30">Accueil</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300">Comment ça marche</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-30">FAQ</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-30">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="hidden lg:flex items-center space-x-6">
+                <a href="javascript:void(0);" class="text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-10">Je suis agent immobilier</a>
+                <a href="javascript:void(0);" class="text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-5">Connexion</a>
+            </div>
+            <button id="menu-toggle" class="lg:hidden flex flex-col gap-1.5 relative w-6 h-6 justify-center items-center">
+                <span class="block w-6 h-0.5 bg-blue transition-all duration-300 origin-center"></span>
+                <span class="block w-6 h-0.5 bg-blue transition-all duration-300 origin-center"></span>
+                <span class="block w-6 h-0.5 bg-blue transition-all duration-300 origin-center"></span>
+            </button>
+        </div>
+        <nav id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-200">
+            <div class="px-5 py-4">
+                <ul class="flex flex-col space-y-3">
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">Accueil</a></li>
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">Comment ça marche</a></li>
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">FAQ</a></li>
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">Contact</a></li>
+                    <li class="border-t border-gray-200 pt-3 mt-3">
+                        <a href="javascript:void(0);" class="block text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-10 text-center">Je suis agent immobilier</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="block text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-5 text-center">Connexion</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!--Contact-->
+    <section class="pt-5 lg:py-18 pb-18">
+        <div class="container">
+            <h1 class="text-3xl lg:text-banner text-blue leading-10 lg:leading-14 text-center uppercase max-w-[735px] mx-auto">Comment fonctionne la tarification chez Casalink ?</h1>
+            <p class="font-family-sora text-sm leading-5 text-[#AFAFAF] font-light mt-2.5 text-center max-w-[882px] mx-auto">Chez CasaLink, la transparence est une priorité. Pas de coûts cachés : vous payez un montant fixe pour un abonnement que vous pouvez arrêter quand vous le souhaitez et un frais variable lorsque vous récupérez un lead (identité vérifiée).
+            </p>
+            <div class="flex flex-col md:flex-row items-center gap-5 lg:gap-12 mt-14.5 max-w-[800px] w-full mx-auto">
+                <div class="bg-blue/10 overflow-hidden max-w-80 w-full rounded-4xl md:min-h-[527px] h-full pb-10 lg:pb-0">
+                    <h2 class="rounded-tl-4xl rounded-tr-4xl text-lg leading-6 text-white font-bold pt-7.5 px-18 pb-4.5 bg-blue text-center">Abonnement fixe</h2>
+                    <img src="images/fee-icon1.svg" alt="Calendar Icon" class="mt-8 mx-auto">
+                    <div class="flex items-end justify-center mt-8">
+                        <h3 class="text-4xl text-blue font-family-tenor leading-10">80€</h3>
+                        <p class="text-base text-blue font-sora font-light">/mois</p>
+                    </div>
+                    <ul class="flex flex-col gap-3 pl-8 mt-8">
+                        <li class="flex items-start gap-4"><span class="min-w-2.5 h-2.5 bg-primary rounded-full mt-1"></span><p class="font-family-sora text-sm font-light text-blue">1  login inclus sans engagement</p></li>
+                        <li class="flex items-start gap-4"><span class="min-w-2.5 h-2.5 bg-primary rounded-full mt-1"></span><p class="font-family-sora text-sm font-light text-blue ">Connexion sécurisée</p></li>
+                        <li class="flex items-start gap-4"><span class="min-w-2.5 h-2.5 bg-primary rounded-full mt-1"></span><p class="font-family-sora text-sm font-light text-blue ">Réduction pour chaque login supplémentaire</p></li>
+                    </ul>
+                </div>
+                <p class="text-banner text-blue">+</p>
+                <div class="bg-blue/10 overflow-hidden max-w-80 w-full rounded-4xl md:min-h-[527px] h-full pb-10 lg:pb-0">
+                    <h2 class="rounded-tl-4xl rounded-tr-4xl text-lg leading-6 text-white font-bold pt-7.5 px-18 pb-4.5 bg-blue text-center">Frais fixes</h2>
+                    <img src="images/fee-icon2.svg" alt="Calendar Icon" class="mt-8 mx-auto">
+                    <div class="flex items-end justify-center mt-8">
+                        <p class="text-base text-blue font-sora font-light">Vente +12 mois =</p>
+                        <h3 class="text-4xl text-blue font-family-tenor">25€</h3>
+                    </div>
+                    <div class="flex items-end justify-center mt-2">
+                        <p class="text-base text-blue font-sora font-light">Vente 7-12 mois =</p>
+                        <h3 class="text-4xl text-blue font-family-tenor">35€</h3>
+                    </div>
+                    <div class="flex items-end justify-center mt-2">
+                        <p class="text-base text-blue font-sora font-light">Vente -6 mois =</p>
+                        <h3 class="text-4xl text-blue font-family-tenor">50€</h3>
+                    </div>
+                    <ul class="mt-4 flex flex-col gap-3 pl-8">
+                        <li class="flex items-start gap-4"><span class="min-w-2.5 h-2.5 bg-primary rounded-full mt-1"></span><p class="font-family-sora text-sm font-light text-blue">Frais au succès
+                        </p></li>
+                        <li class="flex items-start gap-4"><span class="min-w-2.5 h-2.5 bg-primary rounded-full mt-1"></span><p class="font-family-sora text-sm font-light text-blue ">0.20% du prix de vente final</p></li>
+                    </ul>
+                    <hr class="w-4/5 mx-auto border-blue/10 border-2 my-5">
+                    <div class="flex flex-col justify-center items-center">
+                        <p class="text-sm text-blue font-sora">Vente à 250.000€</p>
+                        <img src="images/arrow-right.svg" alt="Arrow" class="rotate-90 w-3">
+                        <p class="text-sm text-blue font-sora">500€ de frais</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="w-4/5 mx-auto border-blue/10 border-2 my-20">
+            <div class="bg-blue/10 overflow-hidden max-w-80 w-full rounded-4xl lg:min-h-[390px] h-full pb-10 lg:pb-0 mx-auto">
+                <h2 class="rounded-tl-4xl rounded-tr-4xl text-lg leading-6 text-white font-bold pt-7.5 px-18 pb-4.5 bg-blue text-center">Frais location</h2>
+                <img src="images/fee-icon3.svg" alt="Calendar Icon" class="mt-8 mx-auto">
+                <div class="flex items-center flex-col mt-8">
+                    <h3 class="text-4xl text-blue font-family-tenor leading-10">5%</h3>
+                    <p class="text-lg text-blue font-sora font-light">du premier loyer
+                    </p>
+                </div>
+                <ul class="flex flex-col items-center gap-3 pl-8 mt-8">
+                    <li class="flex items-center gap-4"><span class="min-w-2.5 h-2.5 bg-primary rounded-full"></span><p class="font-family-sora text-sm font-light text-blue">Minimum 25€ par lead</p></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="relative ">
+        <div class="container relative z-50">
+            <div class="grid grid-cols-3 space-x-30 items-center">
+                <div class="col-span-3 md:col-span-1">
+                    <a href="javascript:void(0);"><img src="images/logo-white.svg" alt="Casalink"></a>
+                </div>
+                <div class="col-span-3 md:col-span-1">
+                    <ul class="flex flex-col gap-2 lg:gap-5">
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light leading-5 text-white hover:text-primary transition duration-300">Accueil</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light leading-5 text-white hover:text-primary transition duration-300">Comment ça marche</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light leading-5 text-white hover:text-primary transition duration-300">FAQ</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light leading-5 text-white hover:text-primary transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-3 md:col-span-1 mt-5 lg:mt-0">
+                    <h2 class="text-lg md:text-2xl text-white font-family-tenor uppercase leading-8">Suivez-nous sur les <br> réseaux</h2>
+                    <ul class="flex items-center gap-2.5 mt-2.5">
+                        <li><a href="javascript:void(0);"><img src="images/fb.svg" alt="Facebook Icon"></a></li>
+                        <li><a href="javascript:void(0);"><img src="images/insta.svg" alt="Instagram Icon"></a></li>
+                        <li><a href="javascript:void(0);"><img src="images/youtube.svg" alt="Youtube Icon"></a></li>
+                        <li><a href="javascript:void(0);"><img src="images/linkedin.svg" alt="Linkedin Icon"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex items-center justify-center pb-7.5 mt-5 lg:mt-0">
+                <small class="text-sm leading-5 font-sora text-white/50">Copyright © 2025 <a href="javascript:void(0);">CasaLink</a> | <a href="javascript:void(0);">Vie privée</a> | Website by <a href="javascript:void(0);">Flexvision</a></small>
+            </div>
+        </div>
+        <div class="absolute -top-10 left-0 right-0 bottom-0">
+            <img src="images/eclipse.svg" alt="Eclipse" class="h-full w-full object-cover">
+        </div>
+        <div class="absolute h-3/5 left-0 right-0 bottom-0 bg-blue">
+        </div>
+    </footer>
+</body>
+<script src="accordion.js"></script>
+<script src="header.js"></script>
+<script src="checkbox.js"></script>
+</html>
