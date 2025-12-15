@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./output.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casa Link</title>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div class="flex items-center justify-between w-full p-5 lg:py-6 lg:pl-10 lg:pr-12 max-w-[1366px] mx-auto">
+            <div class="flex items-center gap-4 xl:gap-15">
+                <a href="index.html"><img src="images/logo.svg" alt="Casalink"></a>
+                <nav class="hidden lg:block">
+                    <ul class="flex space-x-6 xl:space-x-16">
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light  text-primary hover:text-primary transition duration-30">Accueil</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300">Comment ça marche</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-30">FAQ</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-30">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="hidden lg:flex items-center space-x-6">
+                <a href="javascript:void(0);" class="text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-10">Je suis agent immobilier</a>
+                <a href="javascript:void(0);" class="text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-5">Connexion</a>
+            </div>
+            <button id="menu-toggle" class="lg:hidden flex flex-col gap-1.5 relative w-6 h-6 justify-center items-center">
+                <span class="block w-6 h-0.5 bg-blue transition-all duration-300 origin-center"></span>
+                <span class="block w-6 h-0.5 bg-blue transition-all duration-300 origin-center"></span>
+                <span class="block w-6 h-0.5 bg-blue transition-all duration-300 origin-center"></span>
+            </button>
+        </div>
+        <nav id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-200">
+            <div class="px-5 py-4">
+                <ul class="flex flex-col space-y-3">
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">Accueil</a></li>
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">Comment ça marche</a></li>
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">FAQ</a></li>
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">Contact</a></li>
+                    <li class="border-t border-gray-200 pt-3 mt-3">
+                        <a href="javascript:void(0);" class="block text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-10 text-center">Je suis agent immobilier</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="block text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-5 text-center">Connexion</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!--Comparaison des agences après réception du mail-->
+    <section class="py-10">
+        <div class="container">
+            <div class="max-w-[584px] w-full mx-auto">
+                <h1 class="text-2xl lg:text-3xl text-blue font-family-tenor uppercase text-center">Comparaison des agences après réception du mail</h1>
+                <p class="text-base font-sora text-[#AFAFAF] text-center">Voici les agences qui ont postulé pour votre bien :</p>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="w-full mt-14">
+                    <thead>
+                    <tr>
+                        <td class="w-[20%]"></td>
+                        <td class="text-lg font-family-tenor uppercase text-blue pb-4 w-[20%]">Agence 1</td>
+                        <td class="text-lg font-family-tenor uppercase text-blue pb-4">Agence 2</td>
+                        <td class="text-lg font-family-tenor uppercase text-blue pb-4">Agence 3</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="bg-[#F9FBFC]">
+                        <td class="text-sm font-family-sora text-blue pt-4 pb-5 px-9">Prise de vue</td>
+                        <td class="pt-4 pb-5 px-5"><div class="flex items-center gap-2.5"><span class="min-w-[15px] h-[15px] rounded-full bg-[#DE3737]"></span><p class="text-xs font-family-sora text-[#AFAFAF]">Smartphone</p></div></td>
+                        <td class="pt-4 pb-5 px-5"><div class="flex items-center gap-2.5"><span class="min-w-[15px] h-[15px] rounded-full bg-[#DEA137]"></span><p class="text-xs font-family-sora text-[#AFAFAF]">Appareil reflex/compact semi-pro utilisé par l’agent</p></div></td>
+                        <td class="pt-4 pb-5 px-5"><div class="flex items-center gap-2.5"><span class="min-w-[15px] h-[15px] rounded-full bg-[#00A99D]"></span><p class="text-xs font-family-sora text-[#AFAFAF]">SmaPhotographe professionnelrtphone</p></div></td>
+                    </tr>
+                    <tr>
+                        <td class="text-sm font-family-sora text-blue pt-4 pb-5 px-9">Retouches Photos</td>
+                        <td class="pt-4 pb-5 px-5"><div class="flex items-center gap-2.5"><span class="min-w-[15px] h-[15px] rounded-full bg-[#DE3737]"></span><p class="text-xs font-family-sora text-[#AFAFAF]">Aucune</p></div></td>
+                        <td class="pt-4 pb-5 px-5"><div class="flex items-center gap-2.5"><span class="min-w-[15px] h-[15px] rounded-full bg-[#DEA137]"></span><p class="text-xs font-family-sora text-[#AFAFAF]">Retouche légère via logiciel basique</p></div></td>
+                        <td class="pt-4 pb-5 px-5"><div class="flex items-center gap-2.5"><span class="min-w-[15px] h-[15px] rounded-full bg-[#00A99D]"></span><p class="text-xs font-family-sora text-[#AFAFAF]">Retouche professionnelle</p></div></td>
+                    </tr>
+                    <tr class="bg-[#F9FBFC]">
+                        <td class="text-sm font-family-sora text-blue pt-4 pb-5 px-9">Vidéo</td>
+                        <td class="pt-4 pb-5 px-5"><div class="flex items-center gap-2.5"><span class="min-w-[15px] h-[15px] rounded-full bg-[#DE3737]"></span><p class="text-xs font-family-sora text-[#AFAFAF]">Pas de vidéo</p></div></td>
+                        <td class="pt-4 pb-5 px-5"><div class="flex items-center gap-2.5"><span class="min-w-[15px] h-[15px] rounded-full bg-[#DEA137]"></span><p class="text-xs font-family-sora text-[#AFAFAF]">Vidéo faite par l’agent avec smartphone</p></div></td>
+                        <td class="pt-4 pb-5 px-5"><div class="flex items-center gap-2.5"><span class="min-w-[15px] h-[15px] rounded-full bg-[#00A99D]"></span><p class="text-xs font-family-sora text-[#AFAFAF]">Vidéo pro avec storytelling</p></div></td>
+                    </tr>
+                    <tr>
+                        <td class="text-sm font-family-sora text-blue pt-4 pb-5 px-9">Drone</td>
+                        <td class="pt-4 pb-5 px-5"><div class="flex items-center gap-2.5"><span class="min-w-[15px] h-[15px] rounded-full bg-[#DE3737]"></span><p class="text-xs font-family-sora text-[#AFAFAF]">Aucun</p></div></td>
+                        <td class="pt-4 pb-5 px-5"><div class="flex items-center gap-2.5"><span class="min-w-[15px] h-[15px] rounded-full bg-[#DEA137]"></span><p class="text-xs font-family-sora text-[#AFAFAF]">Utilisation sans permis</p></div></td>
+                        <td class="pt-4 pb-5 px-5"><div class="flex items-center gap-2.5"><span class="min-w-[15px] h-[15px] rounded-full bg-[#00A99D]"></span><p class="text-xs font-family-sora text-[#AFAFAF]">Drone avec télépilote agréé</p></div></td>
+                    </tr>
+                    <tr class="bg-[#F9FBFC]">
+                        <td class="text-sm font-family-sora text-blue pt-4 pb-5 px-9">Home staging virtuel</td>
+                        <td class="pt-4 pb-5 px-5"><div class="flex items-center gap-2.5"><span class="min-w-[15px] h-[15px] rounded-full bg-[#DE3737]"></span><p class="text-xs font-family-sora text-[#AFAFAF]">Aucun</p></div></td>
+                        <td class="pt-4 pb-5 px-5"><div class="flex items-center gap-2.5"><span class="min-w-[15px] h-[15px] rounded-full bg-[#DEA137]"></span><p class="text-xs font-family-sora text-[#AFAFAF]">IA</p></div></td>
+                        <td class="pt-4 pb-5 px-5"><div class="flex items-center gap-2.5"><span class="min-w-[15px] h-[15px] rounded-full bg-[#00A99D]"></span><p class="text-xs font-family-sora text-[#AFAFAF]">Personnalisé</p></div></td>
+                    </tr>
+                    <tr>
+                        <td class="text-sm font-family-sora text-blue pt-4 pb-5 px-9">Présentation papier</td>
+                        <td class="pt-4 pb-5 px-5"><div class="flex items-center gap-2.5"><span class="min-w-[15px] h-[15px] rounded-full bg-[#DE3737]"></span><p class="text-xs font-family-sora text-[#AFAFAF]">Aucun document</p></div></td>
+                        <td class="pt-4 pb-5 px-5"><div class="flex items-center gap-2.5"><span class="min-w-[15px] h-[15px] rounded-full bg-[#DEA137]"></span><p class="text-xs font-family-sora text-[#AFAFAF]">Fiche A4 standard</p></div></td>
+                        <td class="pt-4 pb-5 px-5"><div class="flex items-center gap-2.5"><span class="min-w-[15px] h-[15px] rounded-full bg-[#00A99D]"></span><p class="text-xs font-family-sora text-[#AFAFAF]">Brochure designée</p></div></td>
+                    </tr>
+                    <tr class="bg-[#F9FBFC]">
+                        <td class="text-sm font-family-sora text-blue pt-4 pb-5 px-9">Présentation digitale</td>
+                        <td class="pt-4 pb-5 px-5"><div class="flex items-center gap-2.5"><span class="min-w-[15px] h-[15px] rounded-full bg-[#DE3737]"></span><p class="text-xs font-family-sora text-[#AFAFAF]">PDF basique</p></div></td>
+                        <td class="pt-4 pb-5 px-5"><div class="flex items-center gap-2.5"><span class="min-w-[15px] h-[15px] rounded-full bg-[#DEA137]"></span><p class="text-xs font-family-sora text-[#AFAFAF]">Canva/PowerPoint</p></div></td>
+                        <td class="pt-4 pb-5 px-5"><div class="flex items-center gap-2.5"><span class="min-w-[15px] h-[15px] rounded-full bg-[#00A99D]"></span><p class="text-xs font-family-sora text-[#AFAFAF]">Livret digital interactif ou mini-site dédié au bien</p></div></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="mt-10 flex items-center justify-center relative">
+                <a href="javascript:void(0);" class="text-sm font-sora font-light py-1.5  w-56 h-10 flex items-center justify-center border border-blue bg-white z-30 relative hover:bg-blue transition duration-300 text-blue rounded-full hover:text-white px-10">Voir plus de critères
+                </a>
+                <span class="border-t border-blue/10 absolute -translate-y-1/2 top-1/2 w-full"></span>
+            </div>
+            <div class="flex items-center justify-between bg-primary rounded-full text-center mt-7 py-5 px-12">
+                <p class="text-sm text-white font-family-sora leading-5 font-light">Durée d'engagement</p>
+                <p class="text-sm text-white font-family-sora leading-5 font-light">3 mois</p>
+                <p class="text-sm text-white font-family-sora leading-5 font-light">6 mois</p>
+                <p class="text-sm text-white font-family-sora leading-5 font-light">6 mois</p>
+            </div>
+            <div class="flex items-center justify-between text-center bg-blue rounded-full mt-4 py-5 px-12">
+                <p class="text-sm text-white font-family-sora leading-5 font-light">Commission</p>
+                <p class="text-sm text-white font-family-sora leading-5 font-light">1%</p>
+                <p class="text-sm text-white font-family-sora leading-5 font-light">3%</p>
+                <p class="text-sm text-white font-family-sora leading-5 font-light">4%</p>
+            </div>
+        </div>
+    </section>
+    <!--Avec quelle agence souhaitez-vous poursuivre ?-->
+    <section class="pt-20 pb-40 bg-blue/10">
+        <div class="container">
+            <h2 class="text-2xl lg:font-family-tenor text-3xl text-blue uppercase text-center">Avec quelle agence souhaitez-<br>vous poursuivre ?</h2>
+            <form action="#" class="mt-10.5 mx-auto max-w-[455px]">
+                <div class="flex flex-col gap-2">
+                    <label for="Sélectionnez" class="text-sm text-blue font-sora font-light">Sélectionnez une agence</label>
+                    <div class="relative">
+                        <select id="Sélectionnez" class="w-full h-10 rounded-lg px-5 focus:outline-none bg-white transition-all appearance-none duration-300 placeholder:text-[#AFAFAF]">
+                            <option value="Agence 1">Agence 1</option>
+                            <option value="Agence 2">Agence 2</option>
+                            <option value="Agence 3">Agence 3</option>
+                        </select>
+                        <img src="images/caret-down.svg" alt="Caret Down" class="absolute top-1/2 -translate-y-1/2 right-5">
+                    </div>
+                    <input type="submit" class="mt-14 mx-auto text-sm font-sora font-light py-1.5  w-50 h-10 flex items-center justify-center bg-primary transition duration-300 cursor-pointer rounded-full text-white px-10" value="Valider">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="relative ">
+        <div class="container relative z-50">
+            <div class="grid grid-cols-3 space-x-30 items-center">
+                <div class="col-span-3 md:col-span-1">
+                    <a href="javascript:void(0);"><img src="images/logo-white.svg" alt="Casalink"></a>
+                </div>
+                <div class="col-span-3 md:col-span-1">
+                    <ul class="flex flex-col gap-2 lg:gap-5">
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light leading-5 text-white hover:text-primary transition duration-300">Accueil</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light leading-5 text-white hover:text-primary transition duration-300">Comment ça marche</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light leading-5 text-white hover:text-primary transition duration-300">FAQ</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light leading-5 text-white hover:text-primary transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-3 md:col-span-1 mt-5 lg:mt-0">
+                    <h2 class="text-lg md:text-2xl text-white font-family-tenor uppercase leading-8">Suivez-nous sur les <br> réseaux</h2>
+                    <ul class="flex items-center gap-2.5 mt-2.5">
+                        <li><a href="javascript:void(0);"><img src="images/fb.svg" alt="Facebook Icon"></a></li>
+                        <li><a href="javascript:void(0);"><img src="images/insta.svg" alt="Instagram Icon"></a></li>
+                        <li><a href="javascript:void(0);"><img src="images/youtube.svg" alt="Youtube Icon"></a></li>
+                        <li><a href="javascript:void(0);"><img src="images/linkedin.svg" alt="Linkedin Icon"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex items-center justify-center pb-7.5 mt-5 lg:mt-0">
+                <small class="text-sm leading-5 font-sora text-white/50">Copyright © 2025 <a href="javascript:void(0);">CasaLink</a> | <a href="javascript:void(0);">Vie privée</a> | Website by <a href="javascript:void(0);">Flexvision</a></small>
+            </div>
+        </div>
+        <div class="absolute -top-24 left-0 right-0 bottom-0">
+            <img src="images/eclipse.svg" alt="Eclipse" class="h-full w-full object-cover">
+        </div>
+        <div class="absolute h-3/5 left-0 right-0 bottom-0 bg-blue">
+        </div>
+    </footer>
+</body>
+<script src="accordion.js"></script>
+<script src="header.js"></script>
+<script src="checkbox.js"></script>
+<script src="popup.js"></script>
+</html>

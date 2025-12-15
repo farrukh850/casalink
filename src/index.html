@@ -27,7 +27,7 @@
             </div>
             <div class="hidden lg:flex items-center space-x-6">
                 <a href="javascript:void(0);" class="text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-10">Je suis agent immobilier</a>
-                <a href="javascript:void(0);" class="text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-5">Connexion</a>
+                <a href="javascript:void(0);" class="popup-button text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-5">Connexion</a>
             </div>
             <button id="menu-toggle" class="lg:hidden flex flex-col gap-1.5 relative w-6 h-6 justify-center items-center">
                 <span class="block w-6 h-0.5 bg-blue transition-all duration-300 origin-center"></span>
@@ -46,7 +46,7 @@
                         <a href="javascript:void(0);" class="block text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-10 text-center">Je suis agent immobilier</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0);" class="block text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-5 text-center">Connexion</a>
+                        <a href="javascript:void(0);" class="popup-button block text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-5 text-center">Connexion</a>
                     </li>
                 </ul>
             </div>
@@ -337,7 +337,36 @@
         <div class="absolute h-3/5 left-0 right-0 bottom-0 bg-blue">
         </div>
     </footer>
+
+
+    <!--Popup-->
+    <section class="bg-white/10 backdrop-blur-lg fixed top-0 left-0 w-full justify-center items-center z-50 h-full hidden" id="popup">
+        <div class="max-w-[848px] w-full bg-blue rounded-4xl z-100 relative flex items-center justify-center">
+            <div class="flex items-center justify-end absolute right-8 top-8 lg:top-5">
+                <button class="popup-close cursor-pointer"><img src="images/close.svg" alt="Close" class="w-5"></button>
+            </div>
+            <div class="flex flex-col max-w-[360px] mx-auto items-center text-center py-18">
+                <h2 class="font-family-tenor text-3xl text-white uppercase mb-4.5">Identifiez-vous ou créez un compte</h2>
+                <form action="#" class="flex flex-col gap-7">
+                    <div class="flex flex-col items-start gap-2">
+                        <label for="Mail" class="text-sm font-sora font-light text-white">Mail</label>
+                        <input type="text" name="Mail" id="Mail" placeholder="john.smith@gmail.com" class="w-72 h-10 rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent bg-white transition-all duration-300 placeholder:text-[#AFAFAF]">
+                    </div>
+                    <div class="flex flex-col items-start gap-2">
+                        <label for="passe" class="text-sm font-sora font-light text-white">Mot de passe</label>
+                        <input type="text" name="passe" id="passe" placeholder="Votre mot de passe" class="w-72 h-10 rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent bg-white transition-all duration-300 placeholder:text-[#AFAFAF]">
+                    </div>
+                    <input type="submit" value="Connexion" class="text-sm font-sora font-light py-3 bg-primary text-white rounded-4xl px-5.5 h-11 w-full lg:w-50 mx-auto mt-10 flex items-center justify-center">
+                </form>
+                <div class="flex flex-col gap-3 mt-12">
+                    <a href="#" class="text-sm font-family-sora text-white leading-5">Mot de passe oublié ?</a>
+                    <p class="text-sm font-family-sora text-white leading-5">Vous n'avez pas de compte ? <a href="#" class="underline">Créez le ici</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 <script src="accordion.js"></script>
 <script src="header.js"></script>
+<script src="popup.js"></script>
 </html>
