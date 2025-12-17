@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./output.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casa Link</title>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div class="flex items-center justify-between w-full p-5 lg:py-6 lg:pl-10 lg:pr-12 max-w-[1366px] mx-auto">
+            <div class="flex items-center gap-4 xl:gap-15">
+                <a href="index.html"><img src="images/logo.svg" alt="Casalink"></a>
+                <nav class="hidden lg:block">
+                    <ul class="flex space-x-6 xl:space-x-16">
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light  text-primary hover:text-primary transition duration-30">Accueil</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300">Comment ça marche</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-30">FAQ</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-30">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="hidden lg:flex items-center space-x-6">
+                <a href="javascript:void(0);" class="text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-10">Je suis agent immobilier</a>
+                <a href="javascript:void(0);" class="text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-5">Connexion</a>
+            </div>
+            <button id="menu-toggle" class="lg:hidden flex flex-col gap-1.5 relative w-6 h-6 justify-center items-center">
+                <span class="block w-6 h-0.5 bg-blue transition-all duration-300 origin-center"></span>
+                <span class="block w-6 h-0.5 bg-blue transition-all duration-300 origin-center"></span>
+                <span class="block w-6 h-0.5 bg-blue transition-all duration-300 origin-center"></span>
+            </button>
+        </div>
+        <nav id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-200">
+            <div class="px-5 py-4">
+                <ul class="flex flex-col space-y-3">
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">Accueil</a></li>
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">Comment ça marche</a></li>
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">FAQ</a></li>
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">Contact</a></li>
+                    <li class="border-t border-gray-200 pt-3 mt-3">
+                        <a href="javascript:void(0);" class="block text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-10 text-center">Je suis agent immobilier</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="block text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-5 text-center">Connexion</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!--Banner-->
+    <section class="pb-40">
+        <div class="container">
+            <div class="relative w-full h-60 lg:h-124 rounded-[27px] overflow-hidden">
+                <img src="images/house-large.png" alt="House" class="w-full h-full object-cover">
+                <div class="absolute top-9.5 left-12 flex items-center gap-4 rounded-4xl bg-primary h-7.5 w-32 justify-center">
+                    <img src="images/caret-left-white.svg" alt="Caret Left">
+                    <p class="text-sm font-sora text-white">Retour</p>
+                </div>
+            </div>
+            <div class="pt-20 pb-6 bg-blue rounded-[21px] -mt-14 w-[95%] mx-auto">
+                <div class="flex items-center gap-5 lg:gap-0 flex-wrap lg:flex-nowrap justify-between">
+                    <div class="flex items-center gap-6 px-11 lg:border-r lg:border-white">
+                        <img src="images/banner-icon1.svg" alt="Banner Icon">
+                        <p class="font-family-sora text-white leading-4 text-xs">Rue Vallée 13, 4681 Oupeye</p>
+                    </div>
+                    <div class="flex items-center gap-6 px-11 lg:border-r lg:border-white">
+                        <img src="images/banner-icon2.svg" alt="Banner Icon">
+                        <p class="font-family-sora text-white leading-4 text-xs">Maison</p>
+                    </div>
+                    <div class="flex items-center gap-6 px-11 lg:border-r lg:border-white">
+                        <img src="images/banner-icon3.svg" alt="Banner Icon">
+                        <p class="font-family-sora text-white leading-4 text-xs">3 chambres</p>
+                    </div>
+                    <div class="flex items-center gap-6 px-11 lg:border-r lg:border-white">
+                        <img src="images/banner-icon4.svg" alt="Banner Icon">
+                        <p class="font-family-sora text-white leading-4 text-xs">1 salle d'eau</p>
+                    </div>
+                    <div class="flex items-center gap-6 px-11">
+                        <img src="images/banner-icon5.svg" alt="Banner Icon">
+                        <p class="font-family-sora text-white leading-4 text-xs">225.000 €</p>
+                    </div>
+                </div>
+            </div>
+            <div class="md:py-10 flex flex-col md:flex-row items-stretch justify-between lg:max-w-[90%] mx-auto">
+                <div class="flex flex-col gap-3 w-full px-0 md:px-14 md:border-r md:border-blue py-5 md:py-7">
+                    <div class="flex items-center justify-between">
+                        <p class="text-sm font-sora leading-5 text-blue">Jardin</p>
+                        <p class="text-sm font-sora leading-5 text-[#AFAFAF]">Oui</p>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <p class="text-sm font-sora leading-5 text-blue">Garage</p>
+                        <p class="text-sm font-sora leading-5 text-[#AFAFAF]">Oui</p>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <p class="text-sm font-sora leading-5 text-blue">Cave</p>
+                        <p class="text-sm font-sora leading-5 text-[#AFAFAF]">Oui</p>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <p class="text-sm font-sora leading-5 text-blue">Grenier</p>
+                        <p class="text-sm font-sora leading-5 text-[#AFAFAF]">Non</p>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <p class="text-sm font-sora leading-5 text-blue">Place de parking</p>
+                        <p class="text-sm font-sora leading-5 text-[#AFAFAF]">Non</p>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-3 w-full px-0 md:px-14 md:border-r md:border-blue py-5 md:py-7">
+                    <div class="flex items-center justify-between">
+                        <p class="text-sm font-sora leading-5 text-blue">Année de construction</p>
+                        <p class="text-sm font-sora leading-5 text-[#AFAFAF]">1976</p>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <p class="text-sm font-sora leading-5 text-blue">Surface habitable</p>
+                        <p class="text-sm font-sora leading-5 text-[#AFAFAF]">125 m²</p>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <p class="text-sm font-sora leading-5 text-blue">Etat du bien</p>
+                        <p class="text-sm font-sora leading-5 text-[#AFAFAF]">Bon état</p>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <p class="text-sm font-sora leading-5 text-blue">Délais souhaité</p>
+                        <p class="text-sm font-sora leading-5 text-[#AFAFAF]">1 à 6 mois</p>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-3 w-full px-0 md:px-14 py-5 md:py-7">
+                    <div class="flex justify-between gap-3 flex-col">
+                        <p class="text-sm font-sora leading-5 text-blue">Message du vendeur :</p>
+                        <p class="text-sm font-sora leading-4 text-[#AFAFAF]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum viverra orci mattis massa hendrerit, in egestas massa elementum. Proin molestie sapien eu sapien lacinia, vel vulputate lacus condimentum. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col items-center gap-4 max-w-[679px] mx-auto text-center">
+                <h2 class="text-3xl lg:text-banner font-family-tenor leading-10 lg:leading-14 text-blue uppercase">Vous souhaitez postuler pour ce bien ?</h2>
+                <p class="text-sm leading-5 text-[#AFAFAF]">Remplissez le formulaire ci-dessous avec les services que vous proposerez</p>
+            </div>
+            <div class="py-10 px-5 lg:py-14 lg:px-24 rounded-4xl bg-blue/10 mt-5 lg:mt-18 max-w-[1215px] mx-auto">
+                <div class="flex items-center gap-2">
+                    <span class="min-w-[21px] h-[21px] rounded-full bg-blue"></span>
+                    <div class="border border-blue w-full"></div>
+                    <div class="relative w-[21px]">
+                        <span class="w-[21px] h-[21px] rounded-full bg-primary block"></span>
+                        <span class="w-[15px] h-[15px] rounded-full bg-primary block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 border-4 border-white"></span>
+                    </div>
+                    <div class="border border-blue w-full"></div>
+                    <span class="min-w-[21px] h-[21px] rounded-full border border-blue"></span>
+                    <div class="border border-blue w-full"></div>
+                    <span class="min-w-[21px] h-[21px] rounded-full border border-blue"></span>
+                </div>
+                <form action="#" class="mt-5 lg:mt-14 flex flex-col gap-3 lg:gap-7">
+                    <div class="flex flex-col sm:flex-row items-start lg:items-center gap-3 lg:gap-20 justify-center">
+                        <div class="flex flex-col gap-2 w-full">
+                            <label for="step-label1" class="text-sm font-sora font-light">Jours de fermeture</label>
+                            <div class="relative">
+                                <select name="step-label1" id="step-label1" class="w-full h-10 rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent bg-white text-[#AFAFAF] transition-all duration-300 appearance-none">
+                                    <option value="">Ouvert toute l’année sauf fériés</option>
+                                    <option value="">Ouvert toute l’année sauf fériés</option>
+                                    <option value="">Ouvert toute l’année sauf fériés</option>
+                                </select>
+                                <img src="images/caret-down.svg" alt="Caret Down" class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2 w-full">
+                            <label for="step-label2" class="text-sm font-sora font-light">Réactivité</label>
+                            <div class="relative">
+                                <select name="step-label2" id="step-label2" class="w-full h-10 rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent text-[#AFAFAF] bg-white transition-all duration-300 appearance-none">
+                                    <option value="">24h</option>
+                                    <option value="">24h</option>
+                                    <option value="">24h</option>
+                                </select>
+                                <img src="images/caret-down.svg" alt="Caret Down" class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row items-start lg:items-center gap-3 lg:gap-20 justify-center">
+                        <div class="flex flex-col gap-2 w-full">
+                            <label for="step-label3" class="text-sm font-sora font-light">Permanence téléphonique</label>
+                            <div class="relative">
+                                <select name="step-label3" id="step-label3" class="w-full h-10 rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent bg-white text-[#AFAFAF] transition-all duration-300 appearance-none">
+                                    <option value="">Secrétariat formé</option>
+                                    <option value="">Secrétariat formé</option>
+                                    <option value="">Secrétariat formé</option>
+                                </select>
+                                <img src="images/caret-down.svg" alt="Caret Down" class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2 w-full">
+                            <label for="step-label4" class="text-sm font-sora font-light">Rédaction compromis</label>
+                            <div class="relative">
+                                <select name="step-label4" id="step-label4" class="w-full h-10 rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent text-[#AFAFAF] bg-white transition-all duration-300 appearance-none">
+                                    <option value="">Renvoi vers notaire</option>
+                                    <option value="">Renvoi vers notaire</option>
+                                    <option value="">Renvoi vers notaire</option>
+                                </select>
+                                <img src="images/caret-down.svg" alt="Caret Down" class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row items-start lg:items-center gap-3 lg:gap-20 justify-center">
+                        <div class="flex flex-col gap-2 w-full">
+                            <label for="step-label5" class="text-sm font-sora font-light">Analyse urbanistique</label>
+                            <div class="relative">
+                                <select name="step-label5" id="step-label5" class="w-full h-10 rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent bg-white text-[#AFAFAF] transition-all duration-300 appearance-none">
+                                    <option value="">Non réalisée</option>
+                                    <option value="">Non réalisée</option>
+                                    <option value="">Non réalisée</option>
+                                </select>
+                                <img src="images/caret-down.svg" alt="Caret Down" class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2 w-full">
+                            <label for="step-label6" class="text-sm font-sora font-light">Conseil juridique</label>
+                            <div class="relative">
+                                <select name="step-label6" id="step-label6" class="w-full h-10 rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent text-[#AFAFAF] bg-white transition-all duration-300 appearance-none">
+                                    <option value="">Connaissances de base</option>
+                                    <option value="">Connaissances de base</option>
+                                    <option value="">Connaissances de base</option>
+                                </select>
+                                <img src="images/caret-down.svg" alt="Caret Down" class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row items-start lg:items-center gap-3 lg:gap-20 justify-center">
+                        <div class="flex flex-col gap-2 w-full">
+                            <label for="step-label7" class="text-sm font-sora font-light">Estimation</label>
+                            <div class="relative">
+                                <select name="step-label7" id="step-label7" class="w-full h-10 rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent bg-white text-[#AFAFAF] transition-all duration-300 appearance-none">
+                                    <option value="">Analyse comparative basique</option>
+                                    <option value="">Analyse comparative basique</option>
+                                    <option value="">Analyse comparative basique</option>
+                                </select>
+                                <img src="images/caret-down.svg" alt="Caret Down" class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2 w-full">
+                            <label for="step-label8" class="text-sm font-sora font-light">Argumentaire prix</label>
+                            <div class="relative">
+                                <select name="step-label8" id="step-label8" class="w-full h-10 rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent text-[#AFAFAF] bg-white transition-all duration-300 appearance-none">
+                                    <option value="">Structuré et visuel</option>
+                                    <option value="">Structuré et visuel</option>
+                                    <option value="">Structuré et visuel</option>
+                                </select>
+                                <img src="images/caret-down.svg" alt="Caret Down" class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                        <a href="javascript:void(0);" class="text-sm font-sora font-light py-3 bg-primary text-white rounded-4xl px-5.5 h-11 w-full lg:w-50 flex items-center justify-center">Étape suivante
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="relative">
+        <div class="container relative z-50">
+            <div class="grid grid-cols-3 space-x-30 items-center">
+                <div class="col-span-3 md:col-span-1">
+                    <a href="javascript:void(0);"><img src="images/logo-white.svg" alt="Casalink"></a>
+                </div>
+                <div class="col-span-3 md:col-span-1">
+                    <ul class="flex flex-col gap-2 lg:gap-5">
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light leading-5 text-white hover:text-primary transition duration-300">Accueil</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light leading-5 text-white hover:text-primary transition duration-300">Comment ça marche</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light leading-5 text-white hover:text-primary transition duration-300">FAQ</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light leading-5 text-white hover:text-primary transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-3 md:col-span-1 mt-5 lg:mt-0">
+                    <h2 class="text-lg md:text-2xl text-white font-family-tenor uppercase leading-8">Suivez-nous sur les <br> réseaux</h2>
+                    <ul class="flex items-center gap-2.5 mt-2.5">
+                        <li><a href="javascript:void(0);"><img src="images/fb.svg" alt="Facebook Icon"></a></li>
+                        <li><a href="javascript:void(0);"><img src="images/insta.svg" alt="Instagram Icon"></a></li>
+                        <li><a href="javascript:void(0);"><img src="images/youtube.svg" alt="Youtube Icon"></a></li>
+                        <li><a href="javascript:void(0);"><img src="images/linkedin.svg" alt="Linkedin Icon"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex items-center justify-center pb-7.5 mt-5 lg:mt-0">
+                <small class="text-sm leading-5 font-sora text-white/50">Copyright © 2025 <a href="javascript:void(0);">CasaLink</a> | <a href="javascript:void(0);">Vie privée</a> | Website by <a href="javascript:void(0);">Flexvision</a></small>
+            </div>
+        </div>
+        <div class="absolute -top-8 lg:-top-24 left-0 right-0 bottom-0">
+            <img src="images/eclipse.svg" alt="Eclipse" class="h-full w-full object-cover">
+        </div>
+        <div class="absolute h-3/5 left-0 right-0 bottom-0 bg-blue">
+        </div>
+    </footer>
+</body>
+<script src="accordion.js"></script>
+<script src="header.js"></script>
+<script src="checkbox.js"></script>
+<script src="popup.js"></script>
+</html>
