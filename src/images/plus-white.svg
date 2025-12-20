@@ -1,9 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="23" height="24" viewBox="0 0 23 24">
-  <g id="Group_8" data-name="Group 8" transform="translate(-0.22 0.055)">
-    <text id="_" data-name="+" transform="translate(6.22 15.945)" fill="#fff" font-size="15" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">+</tspan></text>
-    <g id="Ellipse_8" data-name="Ellipse 8" transform="translate(0.22 -0.055)" fill="none" stroke="#fff" stroke-width="2">
-      <ellipse cx="11.5" cy="12" rx="11.5" ry="12" stroke="none"/>
-      <ellipse cx="11.5" cy="12" rx="10.5" ry="11" fill="none"/>
-    </g>
-  </g>
-</svg>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="SVGRepo_iconCarrier"> <g clip-path="url(#clip0_429_10970)"> <circle cx="12" cy="11.999" r="9" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/> <path d="M12 9V15" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/> <path d="M9 12H15" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/> </g> <defs> <clipPath id="clip0_429_10970"> <rect width="24" height="24" fill="white"/> </clipPath> </defs> </g>
+</svg>
