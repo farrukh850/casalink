@@ -91,6 +91,9 @@
     gap: 16px;
     position: relative;
 }
+.blog-details-wrapper hr{
+    margin: 30px 0;
+}
 .blog-details-wrapper ul li:before{
     content: "";
     display: block;
