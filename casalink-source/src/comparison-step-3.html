@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="icon" href="./images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="./images/favicon.png">
+    <link rel="apple-touch-icon" href="./images/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casa Link</title>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div class="flex items-center justify-between w-full p-5 lg:py-6 xl:pl-10 xl:pr-12 max-w-[1366px] mx-auto">
+            <div class="flex items-center gap-4 xl:gap-15">
+                <a href="index.html"><img src="images/logo.svg" alt="Casalink"></a>
+                <nav class="hidden lg:block">
+                    <ul class="flex space-x-6 xl:space-x-16">
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light  text-primary hover:text-primary transition duration-30">Accueil</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300">Comment ça marche</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-30">FAQ</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-30">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="hidden lg:flex items-center space-x-6">
+                <a href="javascript:void(0);" class="text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-10">Je suis agent immobilier</a>
+                <a href="javascript:void(0);" class="text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-5">Connexion</a>
+            </div>
+            <button id="menu-toggle" class="lg:hidden flex flex-col gap-1.5 relative w-6 h-6 justify-center items-center">
+                <span class="block w-6 h-0.5 bg-blue transition-all duration-300 origin-center"></span>
+                <span class="block w-6 h-0.5 bg-blue transition-all duration-300 origin-center"></span>
+                <span class="block w-6 h-0.5 bg-blue transition-all duration-300 origin-center"></span>
+            </button>
+        </div>
+        <nav id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-200">
+            <div class="px-5 py-4">
+                <ul class="flex flex-col space-y-3">
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">Accueil</a></li>
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">Comment ça marche</a></li>
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">FAQ</a></li>
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">Contact</a></li>
+                    <li class="border-t border-gray-200 pt-3 mt-3">
+                        <a href="javascript:void(0);" class="block text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-10 text-center">Je suis agent immobilier</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="block text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-5 text-center">Connexion</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!--Avant de commencer, créons votre espace personnel.-->
+    <section class="relative overflow-hidden pb-10 lg:pb-25">
+        <div class="container">
+            <div class="grid grid-cols-12 items-start gap-0 lg:gap-11">
+                <div class="col-span-12 lg:col-span-4 pt-0 lg:pt-20 relative h-full">
+                    <h1 class="text-2xl lg:text-3xl font-family-tenor text-blue uppercase">Vous allez à présent encoder votre bien.</h1>
+                    <p class="font-family-sora text-base font-light mt-5 lg:mt-11 text-[#AFAFAF]">Plus votre description sera complète, plus les agences pourront vous faire une offre précise.</p>
+                </div>
+                <div class="col-span-12 lg:col-span-8 mb-9">
+                    <div class="py-10 px-5 lg:py-14 lg:px-24 rounded-4xl bg-blue/10 mt-5 lg:mt-0">
+                        <div class="flex items-center gap-2">
+                            <span class="min-w-[21px] h-[21px] rounded-full bg-blue"></span>
+                            <div class="border border-blue w-full"></div>
+                            <span class="min-w-[21px] h-[21px] rounded-full bg-blue"></span>
+                            <div class="border border-blue w-full"></div>
+                            <div class="relative w-[21px]">
+                                <span class="w-[21px] h-[21px] rounded-full bg-primary block"></span>
+                                <span class="w-[15px] h-[15px] rounded-full bg-primary block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 border-4 border-white"></span>
+                            </div>
+                            <div class="border border-blue w-full"></div>
+                            <span class="min-w-[21px] h-[21px] rounded-full border border-blue"></span>
+                        </div>
+                        <form action="#" class="mt-5 lg:mt-14 flex flex-col gap-3 lg:gap-7">
+                            <div class="grid grid-cols-12 items-start lg:items-center space-x-3 lg:space-x-11 justify-between space-y-4 lg:space-y-0">
+                                <div class="col-span-12 lg:col-span-3 flex flex-col gap-2">
+                                    <label for="code-postal" class="text-sm font-sora font-light text-blue">Code postal</label>
+                                    <input type="text" name="code-postal" id="code-postal" placeholder="4000" class="w-72 h-10 rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent bg-white transition-all duration-300 placeholder:text-[#AFAFAF] w-full" />
+                                </div>
+                                <div class="col-span-12 lg:col-span-9 flex flex-col gap-2">
+                                    <label for="address" class="text-sm font-sora font-light text-blue">Adresse complète</label>
+                                    <input type="text" name="address" placeholder="Rue Vallée 13, 4000 Liège" id="address" class="w-72 h-10 rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent bg-white transition-all duration-300 placeholder:text-[#AFAFAF] w-full" />
+                                </div>
+                            </div>
+                            <p class="text-sm font-sora font-light text-blue">Type de bien :</p>
+                            <div class="grid space-y-4 lg:space-y-0 grid-cols-12 items-start lg:items-center space-x-3 lg:space-x-11 justify-between">
+                                <div class="col-span-12 lg:col-span-3">
+                                    <div class="flex flex-col gap-3">
+                                        <div class="flex items-start lg:items-center gap-2.5">
+                                            <div class="custom-checkbox-wrapper relative flex-[20px] max-w-5 w-full">
+                                                <input type="checkbox" class="hidden" id="Maison">
+                                                <div class="checkbox-ui w-5 h-5 relative cursor-pointer">
+                                                    <span class="w-5 h-5 rounded-full bg-white block"></span>
+                                                    <span class="max-w-3 w-full h-3 rounded-full bg-blue absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 invisible transition-opacity duration-300" style="opacity: 0; visibility: hidden;"></span>
+                                                </div>
+                                            </div>
+                                            <small class="text-sm text-[#AFAFAF] font-family-sora font-light">Maison</small>
+                                        </div>
+                                        <div class="flex items-start lg:items-center gap-2.5">
+                                            <div class="custom-checkbox-wrapper relative flex-[20px] max-w-5 w-full">
+                                                <input type="checkbox" class="hidden" id="Appartement">
+                                                <div class="checkbox-ui w-5 h-5 relative cursor-pointer">
+                                                    <span class="w-5 h-5 rounded-full bg-white block"></span>
+                                                    <span class="max-w-3 w-full h-3 rounded-full bg-blue absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 invisible transition-opacity duration-300" style="opacity: 0; visibility: hidden;"></span>
+                                                </div>
+                                            </div>
+                                            <small class="text-sm text-[#AFAFAF] font-family-sora font-light">Appartement</small>
+                                        </div>
+                                        <div class="flex items-start lg:items-center gap-2.5">
+                                            <div class="custom-checkbox-wrapper relative flex-[20px] max-w-5 w-full">
+                                                <input type="checkbox" class="hidden" id="commerce">
+                                                <div class="checkbox-ui w-5 h-5 relative cursor-pointer">
+                                                    <span class="w-5 h-5 rounded-full bg-white block"></span>
+                                                    <span class="max-w-3 w-full h-3 rounded-full bg-blue absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 invisible transition-opacity duration-300" style="opacity: 0; visibility: hidden;"></span>
+                                                </div>
+                                            </div>
+                                            <small class="text-sm text-[#AFAFAF] font-family-sora font-light">Commerce</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-span-12 lg:col-span-3">
+                                    <div class="flex flex-col gap-3">
+                                        <div class="flex items-start lg:items-center gap-2.5">
+                                            <div class="custom-checkbox-wrapper relative flex-[20px] max-w-5 w-full">
+                                                <input type="checkbox" class="hidden" id="Terrai">
+                                                <div class="checkbox-ui w-5 h-5 relative cursor-pointer">
+                                                    <span class="w-5 h-5 rounded-full bg-white block"></span>
+                                                    <span class="max-w-3 w-full h-3 rounded-full bg-blue absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 invisible transition-opacity duration-300" style="opacity: 0; visibility: hidden;"></span>
+                                                </div>
+                                            </div>
+                                            <small class="text-sm text-[#AFAFAF] font-family-sora font-light">Terrain</small>
+                                        </div>
+                                        <div class="flex items-start lg:items-center gap-2.5">
+                                            <div class="custom-checkbox-wrapper relative flex-[20px] max-w-5 w-full">
+                                                <input type="checkbox" class="hidden" id="Bureau">
+                                                <div class="checkbox-ui w-5 h-5 relative cursor-pointer">
+                                                    <span class="w-5 h-5 rounded-full bg-white block"></span>
+                                                    <span class="max-w-3 w-full h-3 rounded-full bg-blue absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 invisible transition-opacity duration-300" style="opacity: 0; visibility: hidden;"></span>
+                                                </div>
+                                            </div>
+                                            <small class="text-sm text-[#AFAFAF] font-family-sora font-light">Bureau</small>
+                                        </div>
+                                        <div class="flex items-start lg:items-center gap-2.5">
+                                            <div class="custom-checkbox-wrapper relative flex-[20px] max-w-5 w-full">
+                                                <input type="checkbox" class="hidden" id="Parking">
+                                                <div class="checkbox-ui w-5 h-5 relative cursor-pointer">
+                                                    <span class="w-5 h-5 rounded-full bg-white block"></span>
+                                                    <span class="max-w-3 w-full h-3 rounded-full bg-blue absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 invisible transition-opacity duration-300" style="opacity: 0; visibility: hidden;"></span>
+                                                </div>
+                                            </div>
+                                            <small class="text-sm text-[#AFAFAF] font-family-sora font-light">Parking</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-span-12 lg:col-span-6">
+                                    <div class="flex flex-col gap-3 mb-4">
+                                        <div class="flex items-start lg:items-center gap-2.5">
+                                            <div class="custom-checkbox-wrapper relative flex-[20px] max-w-5 w-full">
+                                                <input type="checkbox" class="hidden" id="Autre:">
+                                                <div class="checkbox-ui w-5 h-5 relative cursor-pointer">
+                                                    <span class="w-5 h-5 rounded-full bg-white block"></span>
+                                                    <span class="max-w-3 w-full h-3 rounded-full bg-blue absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 invisible transition-opacity duration-300" style="opacity: 0; visibility: hidden;"></span>
+                                                </div>
+                                            </div>
+                                            <small class="text-sm text-[#AFAFAF] font-family-sora font-light">Autre :</small>
+                                        </div>
+
+                                    </div>
+                                    <input type="text" name="Ecrivez" placeholder="Ecrivez ici l'autre type de bien" id="Ecrivez" class="w-72 h-10 rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent bg-white transition-all duration-300 placeholder:text-[#AFAFAF] w-full">
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-12 items-start lg:items-center space-x-3 lg:space-x-11 justify-between">
+                                <div class="col-span-6 flex flex-col gap-2">
+                                    <label for="address" class="text-sm font-sora font-light text-blue">Nombre de chambre(s)</label>
+                                    <input type="number" name="Nombre" id="Nombre" class="w-72 h-10 rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent bg-white transition-all duration-300 placeholder:text-[#AFAFAF] w-full">
+                                </div>
+                                <div class="col-span-6 flex flex-col gap-2">
+                                    <label for="salle" class="text-sm font-sora font-light text-blue">Nombre de salle(s) de bains</label>
+                                    <input type="number" name="salle" id="salle" class="w-72 h-10 rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent bg-white transition-all duration-300 placeholder:text-[#AFAFAF] w-full">
+                                </div>
+                            </div>
+                            <p class="text-sm font-sora font-light text-blue">Le bien possède :</p>
+                            <div class="flex flex-wrap xl:flex-nowrap items-center gap-3 lg:gap-10">
+                                <div class="flex items-center gap-3">
+                                    <input type="checkbox" name="Jardin" id="Jardin" class="w-5 h-5">
+                                    <label for="Jardin" class="text-sm text-[#AFAFAF] font-family-sora font-light">Jardin</label>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <input type="checkbox" name="Garage" id="Garage" class="w-5 h-5">
+                                    <label for="Garage" class="text-sm text-[#AFAFAF] font-family-sora font-light">Garage</label>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <input type="checkbox" name="Cave" id="Cave" class="w-5 h-5">
+                                    <label for="Cave" class="text-sm text-[#AFAFAF] font-family-sora font-light">Cave</label>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <input type="checkbox" name="Grenier" id="Grenier" class="w-5 h-5">
+                                    <label for="Grenier" class="text-sm text-[#AFAFAF] font-family-sora font-light">Grenier</label>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <input type="checkbox" name="deparking" id="deparking" class="w-5 h-5">
+                                    <label for="deparking" class="text-sm text-[#AFAFAF] font-family-sora font-light">Place de parking</label>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-12 items-start lg:items-center space-x-3 lg:space-x-11 justify-between">
+                                <div class="col-span-6 flex flex-col gap-2">
+                                    <label for="Année" class="text-sm font-sora font-light text-blue">Année de construction</label>
+                                    <input type="text" name="Année" id="Année" placeholder="1976" class="w-72 h-10 rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent bg-white transition-all duration-300 placeholder:text-[#AFAFAF] w-full">
+                                </div>
+                                <div class="col-span-6 flex flex-col gap-2">
+                                    <label for="Surface" class="text-sm font-sora font-light text-blue">Surface approximative</label>
+                                    <div class="relative">
+                                        <input type="text" name="Surface" id="Surface" placeholder="115" class="w-72 h-10 rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent bg-white transition-all duration-300 placeholder:text-[#AFAFAF] w-full">
+                                        <p class="text-sm font-sora font-light text-blue absolute right-5 top-1/2 -translate-y-1/2">m²</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-sm font-sora font-light text-blue">État du bien :</p>
+                            <div class="flex flex-wrap lg:items-center gap-3 lg:gap-8">
+                                <div class="flex items-start lg:items-center gap-2.5">
+                                    <div class="custom-checkbox-wrapper relative flex-[20px] max-w-5 w-full">
+                                        <input type="checkbox" class="hidden" id="Neuf">
+                                        <div class="checkbox-ui w-5 h-5 relative cursor-pointer">
+                                            <span class="w-5 h-5 rounded-full bg-white block"></span>
+                                            <span class="max-w-3 w-full h-3 rounded-full bg-blue absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 invisible transition-opacity duration-300" style="opacity: 0; visibility: hidden;"></span>
+                                        </div>
+                                    </div>
+                                    <small class="text-sm text-[#AFAFAF] font-family-sora font-light">Neuf</small>
+                                </div>
+                                <div class="flex items-start lg:items-center gap-2.5">
+                                    <div class="custom-checkbox-wrapper relative flex-[20px] max-w-5 w-full">
+                                        <input type="checkbox" class="hidden" id="état">
+                                        <div class="checkbox-ui w-5 h-5 relative cursor-pointer">
+                                            <span class="w-5 h-5 rounded-full bg-white block"></span>
+                                            <span class="max-w-3 w-full h-3 rounded-full bg-blue absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 invisible transition-opacity duration-300" style="opacity: 0; visibility: hidden;"></span>
+                                        </div>
+                                    </div>
+                                    <small class="text-sm text-[#AFAFAF] font-family-sora font-light">Excellent état</small>
+                                </div>
+                                <div class="flex items-start lg:items-center gap-2.5">
+                                    <div class="custom-checkbox-wrapper relative flex-[20px] max-w-5 w-full">
+                                        <input type="checkbox" class="hidden" id="Bon-état">
+                                        <div class="checkbox-ui w-5 h-5 relative cursor-pointer">
+                                            <span class="w-5 h-5 rounded-full bg-white block"></span>
+                                            <span class="max-w-3 w-full h-3 rounded-full bg-blue absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 invisible transition-opacity duration-300" style="opacity: 0; visibility: hidden;"></span>
+                                        </div>
+                                    </div>
+                                    <small class="text-sm text-[#AFAFAF] font-family-sora font-light">Bon état</small>
+                                </div>
+                                <div class="flex items-start lg:items-center gap-2.5">
+                                    <div class="custom-checkbox-wrapper relative flex-[20px] max-w-5 w-full">
+                                        <input type="checkbox" class="hidden" id="rafraîchir">
+                                        <div class="checkbox-ui w-5 h-5 relative cursor-pointer">
+                                            <span class="w-5 h-5 rounded-full bg-white block"></span>
+                                            <span class="max-w-3 w-full h-3 rounded-full bg-blue absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 invisible transition-opacity duration-300" style="opacity: 0; visibility: hidden;"></span>
+                                        </div>
+                                    </div>
+                                    <small class="text-sm text-[#AFAFAF] font-family-sora font-light">À rafraîchir</small>
+                                </div>
+                                <div class="flex items-start lg:items-center gap-2.5">
+                                    <div class="custom-checkbox-wrapper relative flex-[20px] max-w-5 w-full">
+                                        <input type="checkbox" class="hidden" id="rénover">
+                                        <div class="checkbox-ui w-5 h-5 relative cursor-pointer">
+                                            <span class="w-5 h-5 rounded-full bg-white block"></span>
+                                            <span class="max-w-3 w-full h-3 rounded-full bg-blue absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 invisible transition-opacity duration-300" style="opacity: 0; visibility: hidden;"></span>
+                                        </div>
+                                    </div>
+                                    <small class="text-sm text-[#AFAFAF] font-family-sora font-light">À rénover</small>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label for="address" class="text-sm font-sora font-light text-blue">Donnez toutes les informations utiles à l'agent ici :</label>
+                                <textarea type="text" name="informations" placeholder="Ecrivez ici les  informations utiles à l'agent" id="informations" class="w-72 h-[177px] pt-3 resize-none rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent bg-white transition-all duration-300 placeholder:text-[#AFAFAF] w-full"></textarea>
+                            </div>
+                            <div class="grid grid-cols-12 items-start space-x-3 lg:space-x-11 justify-between space-y-4 lg:space-y-0">
+                                <div class="col-span-12 lg:col-span-6 flex flex-col gap-2">
+                                    <label for="Quel" class="text-sm font-sora font-light text-blue">Quel prix moyen en attendez-vous ?</label>
+                                    <div class="relative">
+                                        <input type="text" name="Quel" id="Quel" placeholder="115" class="w-72 h-10 rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent bg-white transition-all duration-300 placeholder:text-[#AFAFAF] w-full">
+                                        <p class="text-sm font-sora font-light text-blue absolute right-5 top-1/2 -translate-y-1/2">€</p>
+                                    </div>
+                                </div>
+                                <div class="col-span-12 lg:col-span-6 flex flex-col gap-2">
+                                    <p class="text-sm font-sora font-light text-blue">Dans quel délai souhaitez-vous vendre ? :</p>
+                                    <div class="grid grid-cols-12 items-start lg:items-center space-x-3 lg:space-x-11 justify-between">
+                                        <div class="col-span-6">
+                                            <div class="flex flex-col gap-3">
+                                                <div class="flex items-start lg:items-center gap-2.5">
+                                                    <div class="custom-checkbox-wrapper relative flex-[20px] max-w-5 w-full">
+                                                        <input type="checkbox" class="hidden" id="Maintenant">
+                                                        <div class="checkbox-ui w-5 h-5 relative cursor-pointer">
+                                                            <span class="w-5 h-5 rounded-full bg-white block"></span>
+                                                            <span class="max-w-3 w-full h-3 rounded-full bg-blue absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 invisible transition-opacity duration-300" style="opacity: 0; visibility: hidden;"></span>
+                                                        </div>
+                                                    </div>
+                                                    <small class="text-sm text-[#AFAFAF] font-family-sora font-light">Maintenant</small>
+                                                </div>
+                                                <div class="flex items-start lg:items-center gap-2.5">
+                                                    <div class="custom-checkbox-wrapper relative flex-[20px] max-w-5 w-full">
+                                                        <input type="checkbox" class="hidden" id="mois">
+                                                        <div class="checkbox-ui w-5 h-5 relative cursor-pointer">
+                                                            <span class="w-5 h-5 rounded-full bg-white block"></span>
+                                                            <span class="max-w-3 w-full h-3 rounded-full bg-blue absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 invisible transition-opacity duration-300" style="opacity: 0; visibility: hidden;"></span>
+                                                        </div>
+                                                    </div>
+                                                    <small class="text-sm text-[#AFAFAF] font-family-sora font-light">1 à 6 mois</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-span-6">
+                                            <div class="flex flex-col gap-3">
+                                                <div class="flex items-start lg:items-center gap-2.5">
+                                                    <div class="custom-checkbox-wrapper relative flex-[20px] max-w-5 w-full">
+                                                        <input type="checkbox" class="hidden" id="one-an">
+                                                        <div class="checkbox-ui w-5 h-5 relative cursor-pointer">
+                                                            <span class="w-5 h-5 rounded-full bg-white block"></span>
+                                                            <span class="max-w-3 w-full h-3 rounded-full bg-blue absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 invisible transition-opacity duration-300" style="opacity: 0; visibility: hidden;"></span>
+                                                        </div>
+                                                    </div>
+                                                    <small class="text-sm text-[#AFAFAF] font-family-sora font-light">1 an</small>
+                                                </div>
+                                                <div class="flex items-start lg:items-center gap-2.5">
+                                                    <div class="custom-checkbox-wrapper relative flex-[20px] max-w-5 w-full">
+                                                        <input type="checkbox" class="hidden" id="réfléchis-encore">
+                                                        <div class="checkbox-ui w-5 h-5 relative cursor-pointer">
+                                                            <span class="w-5 h-5 rounded-full bg-white block"></span>
+                                                            <span class="max-w-3 w-full h-3 rounded-full bg-blue absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 invisible transition-opacity duration-300" style="opacity: 0; visibility: hidden;"></span>
+                                                        </div>
+                                                    </div>
+                                                    <small class="text-sm text-[#AFAFAF] font-family-sora font-light">Je réfléchis encore</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label for="address" class="text-sm font-sora font-light text-blue">Qu'attendez-vous d'une agence ?</label>
+                                <textarea type="text" name="Qu'attendez-" placeholder="Ecrivez ici ce que vous attendez d'une agence." id="Qu'attendez-" class="w-72 h-[177px] pt-3 resize-none rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent bg-white transition-all duration-300 placeholder:text-[#AFAFAF] w-full"></textarea>
+                            </div>
+                            <div class="flex flex-col md:flex-row lg:items-center space-x-6.5 space-y-2 lg:space-y-0">
+                                <a href="javascript:void(0);" class="text-sm font-sora font-light py-3 bg-primary text-white rounded-4xl px-5.5 h-11 w-full lg:w-64 flex items-center justify-center">Valider l'encodage de mon bien</a>
+                                <a href="#" class="popup-button text-sm font-sora font-light py-3 text-blue rounded-4xl px-5.5 h-11 w-full lg:w-51 border border-blue flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition duration-300">Que se passe-t-il ensuite ?
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="relative ">
+        <div class="container relative z-50">
+            <div class="grid grid-cols-3 space-x-30 items-center">
+                <div class="col-span-3 md:col-span-1">
+                    <a href="javascript:void(0);"><img src="images/logo-white.svg" alt="Casalink"></a>
+                </div>
+                <div class="col-span-3 md:col-span-1">
+                    <ul class="flex flex-col gap-2 lg:gap-5">
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light leading-5 text-white hover:text-primary transition duration-300">Accueil</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light leading-5 text-white hover:text-primary transition duration-300">Comment ça marche</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light leading-5 text-white hover:text-primary transition duration-300">FAQ</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light leading-5 text-white hover:text-primary transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-3 md:col-span-1 mt-5 lg:mt-0">
+                    <h2 class="text-lg md:text-2xl text-white font-family-tenor uppercase leading-8">Suivez-nous sur les <br> réseaux</h2>
+                    <ul class="flex items-center gap-2.5 mt-2.5">
+                        <li><a href="javascript:void(0);"><img src="images/fb.svg" alt="Facebook Icon"></a></li>
+                        <li><a href="javascript:void(0);"><img src="images/insta.svg" alt="Instagram Icon"></a></li>
+                        <li><a href="javascript:void(0);"><img src="images/youtube.svg" alt="Youtube Icon"></a></li>
+                        <li><a href="javascript:void(0);"><img src="images/linkedin.svg" alt="Linkedin Icon"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex items-center justify-center pb-7.5 mt-5 lg:mt-0">
+                <small class="text-sm leading-5 font-sora text-white/50">Copyright © 2025 <a href="javascript:void(0);">CasaLink</a> | <a href="javascript:void(0);">Vie privée</a> | Website by <a href="javascript:void(0);">Flexvision</a></small>
+            </div>
+        </div>
+        <div class="absolute -top-10 left-0 right-0 bottom-0">
+            <img src="images/eclipse.svg" alt="Eclipse" class="h-full w-full object-cover">
+        </div>
+        <div class="absolute h-3/5 left-0 right-0 bottom-0 bg-blue">
+        </div>
+    </footer>
+
+    <!--Popup-->
+    <section class="bg-white/10 backdrop-blur-lg fixed top-0 left-0 w-full justify-center items-center z-50 h-full hidden" id="popup">
+        <div class="max-w-[848px] w-full bg-blue rounded-4xl z-100 relative h-[425px] flex items-center justify-center m-5 p-5">
+            <div class="flex items-center justify-end absolute right-8 top-5">
+                <button class="popup-close cursor-pointer"><img src="images/close.svg" alt="Close"></button>
+            </div>
+            <div class="flex flex-col max-w-[530px] items-center text-center">
+                <h2 class="font-family-tenor text-2xl lg:text-3xl text-white uppercase mb-4.5">Que se passe-t-il ensuite ?</h2>
+                <p class="font-family-sora text-base text-white font-light mb-14">Une fois votre bien encodé, il est proposé à toutes les agences de notre répertoire. Elles ont 48h pour postuler à la vente de votre bien en répondant à nos questions. Vous pourrez alors comparer leurs offres de façon claire, sans la moindre obligation.</p>
+                <a href="javascript:void(0);" class="py-3 px-14 border border-white rounded-4xl text-sm font-family-sora leading-5 text-white hover:bg-white hover:text-blue transition duration-300">Retour</a>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="accordion.js"></script>
+<script src="header.js"></script>
+<script src="checkbox.js"></script>
+<script src="popup.js"></script>
+</html>

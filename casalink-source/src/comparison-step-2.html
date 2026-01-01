@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="icon" href="./images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="./images/favicon.png">
+    <link rel="apple-touch-icon" href="./images/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casa Link</title>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div class="flex items-center justify-between w-full p-5 lg:py-6 xl:pl-10 xl:pr-12 max-w-[1366px] mx-auto">
+            <div class="flex items-center gap-4 xl:gap-15">
+                <a href="index.html"><img src="images/logo.svg" alt="Casalink"></a>
+                <nav class="hidden lg:block">
+                    <ul class="flex space-x-6 xl:space-x-16">
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light  text-primary hover:text-primary transition duration-30">Accueil</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300">Comment ça marche</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-30">FAQ</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-30">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="hidden lg:flex items-center space-x-6">
+                <a href="javascript:void(0);" class="text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-10">Je suis agent immobilier</a>
+                <a href="javascript:void(0);" class="text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-5">Connexion</a>
+            </div>
+            <button id="menu-toggle" class="lg:hidden flex flex-col gap-1.5 relative w-6 h-6 justify-center items-center">
+                <span class="block w-6 h-0.5 bg-blue transition-all duration-300 origin-center"></span>
+                <span class="block w-6 h-0.5 bg-blue transition-all duration-300 origin-center"></span>
+                <span class="block w-6 h-0.5 bg-blue transition-all duration-300 origin-center"></span>
+            </button>
+        </div>
+        <nav id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-200">
+            <div class="px-5 py-4">
+                <ul class="flex flex-col space-y-3">
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">Accueil</a></li>
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">Comment ça marche</a></li>
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">FAQ</a></li>
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">Contact</a></li>
+                    <li class="border-t border-gray-200 pt-3 mt-3">
+                        <a href="javascript:void(0);" class="block text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-10 text-center">Je suis agent immobilier</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="block text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-5 text-center">Connexion</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!--Merci pour votre inscription.-->
+    <section class="relative overflow-hidden pb-10 lg:pb-25">
+        <div class="container">
+            <div class="grid grid-cols-12 items-start gap-0 lg:gap-11">
+                <div class="col-span-12 xl:col-span-4 pt-0 xl:pt-20 relative h-full">
+                    <h1 class="text-2xl lg:text-3xl font-family-tenor text-blue uppercase">Merci pour votre inscription.</h1>
+                    <p class="font-family-sora text-base font-light mt-5 lg:mt-5 text-[#AFAFAF]">Vous êtes à un clic de recevoir des propositions d'agences adaptées à votre bien. </p>
+                    <p class="font-family-sora text-base font-light mt-5 lg:mt-5 text-blue">Choisissez votre prochaine étape :</p>
+                    <div class="absolute -left-60 -bottom-30 w-120 h-120 hidden xl:block">
+                        <img src="images/comparison-step-two-image.svg" alt="Comparison Icon" class="w-full h-full object-contain">
+                    </div>
+                </div>
+                <div class="col-span-12 xl:col-span-8 mb-9">
+                    <div class="py-10 px-5 lg:py-14 lg:px-24 rounded-4xl bg-blue/10 mt-5 lg:mt-0">
+                        <div class="flex items-center gap-2">
+                            <span class="min-w-[21px] h-[21px] rounded-full bg-blue"></span>
+                            <div class="border border-blue w-full"></div>
+                            <div class="relative w-[21px]">
+                                <span class="w-[21px] h-[21px] rounded-full bg-primary block"></span>
+                                <span class="w-[15px] h-[15px] rounded-full bg-primary block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 border-4 border-white"></span>
+                            </div>
+                            <div class="border border-blue w-full"></div>
+                            <span class="min-w-[21px] h-[21px] rounded-full border border-blue"></span>
+                            <div class="border border-blue w-full"></div>
+                            <span class="min-w-[21px] h-[21px] rounded-full border border-blue"></span>
+                        </div>
+                        <div class="flex flex-col gap-10 lg:gap-5 mt-15">
+                            <div class="flex flex-col lg:flex-row items-center gap-5 lg:gap-40">
+                                <img src="images/step-2-icon1.svg" class="w-18" alt="Home Icon">
+                                <div class="relative w-full">
+                                    <p class="text-sm font-family-sora leading-5 text-white lg:py-8 p-8 lg:pr-7 lg:pl-28 bg-blue rounded-2xl font-light text-center pt-16">Une série de questions simples pour commencer à comparer les agences.</p>
+                                    <a href="#" class="text-sm font-sora font-light py-3 bg-primary text-white rounded-2xl lg:rounded-4xl px-5.5 h-11 w-full lg:w-50 flex items-center justify-center absolute lg:top-1/2 lg:-translate-y-1/2 lg:-left-1/4 top-0">Ajouter mon bien</a>
+                                </div>
+                            </div>
+                            <div class="flex flex-col lg:flex-row items-center gap-5 lg:gap-40">
+                                <img src="images/step-2-icon2.svg" class="w-18" alt="Home Icon">
+                                <div class="relative w-full">
+                                    <p class="text-sm font-family-sora leading-5 text-white lg:py-8 p-8 lg:pr-7 lg:pl-28 bg-blue rounded-2xl font-light text-center pt-16">Prix moyens, tendances, attractivité locale : tout pour y voir plus clair.</p>
+                                    <a href="#" class="text-sm font-sora font-light py-3 bg-primary text-white rounded-2xl lg:rounded-4xl px-5.5 h-11 w-full lg:w-50 flex items-center justify-center absolute lg:top-1/2 lg:-translate-y-1/2 lg:-left-1/4 top-0">Explorer le marché</a>
+                                </div>
+                            </div>
+                            <div class="flex flex-col lg:flex-row items-center gap-5 lg:gap-40">
+                                <img src="images/step-2-icon3.svg" class="w-18" alt="Home Icon">
+                                <div class="relative w-full">
+                                    <p class="text-sm font-family-sora leading-5 text-white lg:py-8 p-8 lg:pr-7 lg:pl-28 bg-blue rounded-2xl font-light text-center pt-16">Notre équipe peut vous guider pas à pas.</p>
+                                    <a href="#" class="text-sm font-sora font-light py-3 bg-primary text-white rounded-2xl lg:rounded-4xl px-5.5 h-11 w-full lg:w-50 flex items-center justify-center absolute lg:top-1/2 lg:-translate-y-1/2 lg:-left-1/4 top-0">Aide et accompagnement</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="relative ">
+        <div class="container relative z-50">
+            <div class="grid grid-cols-3 space-x-30 items-center">
+                <div class="col-span-3 md:col-span-1">
+                    <a href="javascript:void(0);"><img src="images/logo-white.svg" alt="Casalink"></a>
+                </div>
+                <div class="col-span-3 md:col-span-1">
+                    <ul class="flex flex-col gap-2 lg:gap-5">
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light leading-5 text-white hover:text-primary transition duration-300">Accueil</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light leading-5 text-white hover:text-primary transition duration-300">Comment ça marche</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light leading-5 text-white hover:text-primary transition duration-300">FAQ</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light leading-5 text-white hover:text-primary transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-3 md:col-span-1 mt-5 lg:mt-0">
+                    <h2 class="text-lg md:text-2xl text-white font-family-tenor uppercase leading-8">Suivez-nous sur les <br> réseaux</h2>
+                    <ul class="flex items-center gap-2.5 mt-2.5">
+                        <li><a href="javascript:void(0);"><img src="images/fb.svg" alt="Facebook Icon"></a></li>
+                        <li><a href="javascript:void(0);"><img src="images/insta.svg" alt="Instagram Icon"></a></li>
+                        <li><a href="javascript:void(0);"><img src="images/youtube.svg" alt="Youtube Icon"></a></li>
+                        <li><a href="javascript:void(0);"><img src="images/linkedin.svg" alt="Linkedin Icon"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex items-center justify-center pb-7.5 mt-5 lg:mt-0">
+                <small class="text-sm leading-5 font-sora text-white/50">Copyright © 2025 <a href="javascript:void(0);">CasaLink</a> | <a href="javascript:void(0);">Vie privée</a> | Website by <a href="javascript:void(0);">Flexvision</a></small>
+            </div>
+        </div>
+        <div class="absolute -top-10 left-0 right-0 bottom-0">
+            <img src="images/eclipse.svg" alt="Eclipse" class="h-full w-full object-cover">
+        </div>
+        <div class="absolute h-3/5 left-0 right-0 bottom-0 bg-blue">
+        </div>
+    </footer>
+</body>
+<script src="accordion.js"></script>
+<script src="header.js"></script>
+<script src="checkbox.js"></script>
+</html>

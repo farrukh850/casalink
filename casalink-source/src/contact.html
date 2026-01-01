@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="icon" href="./images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="./images/favicon.png">
+    <link rel="apple-touch-icon" href="./images/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casa Link</title>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div class="flex items-center justify-between w-full p-5 lg:py-6 xl:pl-10 xl:pr-12 max-w-[1366px] mx-auto">
+            <div class="flex items-center gap-4 xl:gap-15">
+                <a href="index.html"><img src="images/logo.svg" alt="Casalink"></a>
+                <nav class="hidden lg:block">
+                    <ul class="flex space-x-6 xl:space-x-16">
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light  text-primary hover:text-primary transition duration-30">Accueil</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300">Comment ça marche</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-30">FAQ</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-30">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="hidden lg:flex items-center space-x-6">
+                <a href="javascript:void(0);" class="text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-10">Je suis agent immobilier</a>
+                <a href="javascript:void(0);" class="text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-5">Connexion</a>
+            </div>
+            <button id="menu-toggle" class="lg:hidden flex flex-col gap-1.5 relative w-6 h-6 justify-center items-center">
+                <span class="block w-6 h-0.5 bg-blue transition-all duration-300 origin-center"></span>
+                <span class="block w-6 h-0.5 bg-blue transition-all duration-300 origin-center"></span>
+                <span class="block w-6 h-0.5 bg-blue transition-all duration-300 origin-center"></span>
+            </button>
+        </div>
+        <nav id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-200">
+            <div class="px-5 py-4">
+                <ul class="flex flex-col space-y-3">
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">Accueil</a></li>
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">Comment ça marche</a></li>
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">FAQ</a></li>
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">Contact</a></li>
+                    <li class="border-t border-gray-200 pt-3 mt-3">
+                        <a href="javascript:void(0);" class="block text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-10 text-center">Je suis agent immobilier</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="block text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-5 text-center">Connexion</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!--Contact-->
+    <section class="relative overflow-hidden pb-20">
+        <div class="container">
+            <div class="grid grid-cols-12 items-start gap-0 lg:gap-11">
+                <div class="col-span-12 lg:col-span-4 pt-0 lg:pt-11 relative h-full">
+                    <h1 class="text-2xl lg:text-banner font-family-tenor text-blue uppercase">Vous avez la moindre question ? </h1>
+                    <p class="font-family-sora text-base font-light text-[#AFAFAF]">Nous sommes là pour vous répondre ! Appelez nous directement ou remplissez ce formulaire.</p>
+                    <div class="mt-12.5 p-14.5 w-full px- bg-gradient-to-b from-[#00A99D] to-[#1C1C68] rounded-4xl">
+                        <div class="flex flex-col items-center gap-5">
+                            <img src="images/envelope.svg" class="w-12" alt="Envelope">
+                            <a href="mailto:info@casalink.be" class="text-white text-base font-family-sora leading-5 font-light">info@casalink.be</a>
+                            <img src="images/line.svg" alt="Line">
+                            <img src="images/phone.svg" class="w-12" alt="Envelope">
+                            <a href="tel:04 000 00 00" class="text-white text-base font-family-sora leading-5 font-light">04 000 00 00</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-12 lg:col-span-8 mb-9">
+                    <div class="py-10 px-5 lg:py-14 lg:px-24 rounded-4xl bg-blue/10 mt-5 lg:mt-0">
+                        <form action="#" class="flex flex-col gap-3 lg:gap-7">
+                            <div class="flex flex-col sm:flex-row items-start lg:items-center gap-3 lg:gap-18 justify-between">
+                                <div class="flex flex-col gap-2 w-full">
+                                    <label for="Nom" class="text-sm font-sora font-light">Nom</label>
+                                    <input type="text" name="Nom" id="Nom" placeholder="Smith" class="h-10 rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent bg-white transition-all duration-300 placeholder:text-[#AFAFAF] w-full">
+                                </div>
+                                <div class="flex flex-col gap-2 w-full">
+                                    <label for="Prénom" class="text-sm font-sora font-light">Prénom</label>
+                                    <input type="text" name="Prénom" placeholder="John" id="Prénom" class="w-full h-10 rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent bg-white transition-all duration-300 placeholder:text-[#AFAFAF]">
+                                </div>
+                            </div>
+                            <div class="flex flex-col sm:flex-row items-start lg:items-center gap-3 lg:gap-18 justify-between">
+                                <div class="flex flex-col gap-2 w-full">
+                                    <label for="Mail" class="text-sm font-sora font-light">Mail</label>
+                                    <input type="text" name="Mail" placeholder="john.smith@gmail.com" id="Mail" class="w-full h-10 rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent bg-white transition-all duration-300 placeholder:text-[#AFAFAF]">
+                                </div>
+                                <div class="flex flex-col gap-2 w-full">
+                                    <label for="Téléphone" class="text-sm font-sora font-light">Téléphone</label>
+                                    <input type="text" name="Téléphone" placeholder="0400/00.00.00" id="Téléphone" class="w-full h-10 rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent bg-white transition-all duration-300">
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-3">
+                                <label for="Raison" class="text-sm font-sora font-light text-blue">Raison de votre demande</label>
+                                <textarea type="text" name="Raison" placeholder="Ecrivez ici la raison de votre demande" id="Raison" class="w-full h-[115px] pt-3 resize-none rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent bg-white transition-all duration-300 placeholder:text-[#AFAFAF]"></textarea>
+                            </div>
+                            <div class="flex items-start lg:items-center gap-4.5">
+                                <div class="custom-checkbox-wrapper relative flex-[34px] min-w-8.5">
+                                    <input type="checkbox" class="hidden" id="terms-checkbox">
+                                    <div class="checkbox-ui relative cursor-pointer">
+                                        <span class="w-8.5 h-8.5 rounded-lg bg-white block"></span>
+                                        <span class="min-w-6 h-6 rounded-lg bg-blue absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 invisible transition-opacity duration-300" style="opacity: 0; visibility: hidden;"></span>
+                                    </div>
+                                </div>
+                                <small class="text-[10px] text-[#AFAFAF] font-family-sora">J'accepte que Casalink conserve mes données de contact dans un but professionnel uniquement pour une durée de trois ans à dater d'aujourd'hui. En soumettant ce formulaire, vous acceptez notre déclaration de confidentialité</small>
+                            </div>
+                            <div class="flex flex-col lg:flex-row items-center gap-10.5">
+                                <a href="javascript:void(0);" class="text-sm font-sora font-light py-3 bg-primary text-white rounded-4xl px-5.5 h-11 w-full lg:w-50 flex items-center justify-center">Envoyer
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="relative ">
+        <div class="container relative z-50">
+            <div class="grid grid-cols-3 space-x-30 items-center">
+                <div class="col-span-3 md:col-span-1">
+                    <a href="javascript:void(0);"><img src="images/logo-white.svg" alt="Casalink"></a>
+                </div>
+                <div class="col-span-3 md:col-span-1">
+                    <ul class="flex flex-col gap-2 lg:gap-5">
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light leading-5 text-white hover:text-primary transition duration-300">Accueil</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light leading-5 text-white hover:text-primary transition duration-300">Comment ça marche</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light leading-5 text-white hover:text-primary transition duration-300">FAQ</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light leading-5 text-white hover:text-primary transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-3 md:col-span-1 mt-5 lg:mt-0">
+                    <h2 class="text-lg md:text-2xl text-white font-family-tenor uppercase leading-8">Suivez-nous sur les <br> réseaux</h2>
+                    <ul class="flex items-center gap-2.5 mt-2.5">
+                        <li><a href="javascript:void(0);"><img src="images/fb.svg" alt="Facebook Icon"></a></li>
+                        <li><a href="javascript:void(0);"><img src="images/insta.svg" alt="Instagram Icon"></a></li>
+                        <li><a href="javascript:void(0);"><img src="images/youtube.svg" alt="Youtube Icon"></a></li>
+                        <li><a href="javascript:void(0);"><img src="images/linkedin.svg" alt="Linkedin Icon"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex items-center justify-center pb-7.5 mt-5 lg:mt-0">
+                <small class="text-sm leading-5 font-sora text-white/50">Copyright © 2025 <a href="javascript:void(0);">CasaLink</a> | <a href="javascript:void(0);">Vie privée</a> | Website by <a href="javascript:void(0);">Flexvision</a></small>
+            </div>
+        </div>
+        <div class="absolute -top-10 left-0 right-0 bottom-0">
+            <img src="images/eclipse.svg" alt="Eclipse" class="h-full w-full object-cover">
+        </div>
+        <div class="absolute h-3/5 left-0 right-0 bottom-0 bg-blue">
+        </div>
+    </footer>
+</body>
+<script src="accordion.js"></script>
+<script src="header.js"></script>
+<script src="checkbox.js"></script>
+</html>

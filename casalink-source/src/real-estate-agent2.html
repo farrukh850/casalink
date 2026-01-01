@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="icon" href="./images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="./images/favicon.png">
+    <link rel="apple-touch-icon" href="./images/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casa Link</title>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div class="flex items-center justify-between w-full p-5 lg:py-6 xl:pl-10 xl:pr-12 max-w-[1366px] mx-auto">
+            <div class="flex items-center gap-4 xl:gap-15">
+                <a href="index.html"><img src="images/logo.svg" alt="Casalink"></a>
+                <nav class="hidden lg:block">
+                    <ul class="flex space-x-6 xl:space-x-16">
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light  text-primary hover:text-primary transition duration-30">Accueil</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300">Comment ça marche</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-30">FAQ</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-30">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="hidden lg:flex items-center space-x-6">
+                <a href="javascript:void(0);" class="text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-10">Je suis agent immobilier</a>
+                <a href="javascript:void(0);" class="text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-5">Connexion</a>
+            </div>
+            <button id="menu-toggle" class="lg:hidden flex flex-col gap-1.5 relative w-6 h-6 justify-center items-center">
+                <span class="block w-6 h-0.5 bg-blue transition-all duration-300 origin-center"></span>
+                <span class="block w-6 h-0.5 bg-blue transition-all duration-300 origin-center"></span>
+                <span class="block w-6 h-0.5 bg-blue transition-all duration-300 origin-center"></span>
+            </button>
+        </div>
+        <nav id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-200">
+            <div class="px-5 py-4">
+                <ul class="flex flex-col space-y-3">
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">Accueil</a></li>
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">Comment ça marche</a></li>
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">FAQ</a></li>
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">Contact</a></li>
+                    <li class="border-t border-gray-200 pt-3 mt-3">
+                        <a href="javascript:void(0);" class="block text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-10 text-center">Je suis agent immobilier</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="block text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-5 text-center">Connexion</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!--Contact-->
+    <section class="relative overflow-hidden pb-0 lg:pb-20">
+        <div class="container">
+            <div class="grid grid-cols-12 items-start gap-0 lg:gap-11">
+                <div class="col-span-12 lg:col-span-4 pt-0 lg:pt-11 relative h-full">
+                    <h1 class="text-2xl lg:text-banner font-family-tenor text-blue uppercase">Des vendeurs qualifiés, sans prospection </h1>
+                </div>
+                <div class="col-span-12 lg:col-span-8 mb-9">
+                    <div class="py-10 px-5 lg:py-14 lg:px-24 rounded-4xl bg-blue/10 mt-5 lg:mt-0">
+                        <form action="#" class="flex flex-col gap-3 lg:gap-7">
+                            <div class="flex flex-col sm:flex-row items-start lg:items-center gap-3 lg:gap-18 justify-between">
+                                <div class="flex flex-col gap-2 w-full">
+                                    <label for="Nom" class="text-sm font-sora font-light">Nom</label>
+                                    <input type="text" name="Nom" id="Nom" placeholder="Smith" class="h-10 rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent bg-white transition-all duration-300 placeholder:text-[#AFAFAF] w-full">
+                                </div>
+                                <div class="flex flex-col gap-2 w-full">
+                                    <label for="Prénom" class="text-sm font-sora font-light">Prénom</label>
+                                    <input type="text" name="Prénom" placeholder="John" id="Prénom" class="w-full h-10 rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent bg-white transition-all duration-300 placeholder:text-[#AFAFAF]">
+                                </div>
+                            </div>
+                            <div class="flex flex-col sm:flex-row items-start lg:items-center gap-3 lg:gap-18 justify-between">
+                                <div class="flex flex-col gap-2 w-full">
+                                    <label for="Mail" class="text-sm font-sora font-light">Nom de l'agence</label>
+                                    <input type="text" name="Mail" placeholder="Agent  Immo" id="Mail" class="w-full h-10 rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent bg-white transition-all duration-300 placeholder:text-[#AFAFAF]">
+                                </div>
+                                <div class="flex flex-col gap-2 w-full">
+                                    <label for="Téléphone" class="text-sm font-sora font-light">Numéro IPI</label>
+                                    <input type="text" name="Téléphone" placeholder="000.000" id="Téléphone" class="w-full h-10 rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent bg-white transition-all duration-300">
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-3">
+                                <label for="postaux" class="text-sm font-sora font-light text-blue">Code postaux (séparés par une virgule)</label>
+                                <input type="text" name="postaux" placeholder="4000,4020,4030" id="postaux" class="w-full h-10 rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent bg-white transition-all duration-300">
+                            </div>
+                            <div class="flex flex-col gap-3">
+                                <label for="facturation" class="text-sm font-sora font-light text-blue">Adresse de facturation</label>
+                                <input type="text" name="facturation" placeholder="Rue Vallée 13, 4640 Oupeye" id="facturation" class="w-full h-10 rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent bg-white transition-all duration-300">
+                            </div>
+                            <div class="flex flex-col gap-3">
+                                <label for="TVA" class="text-sm font-sora font-light text-blue">Numéro de TVA</label>
+                                <input type="text" name="TVA" placeholder="00000000000" id="TVA" class="w-full h-10 rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent bg-white transition-all duration-300">
+                            </div>
+                            <div class="flex flex-col sm:flex-row items-start lg:items-center gap-3 lg:gap-18 justify-between">
+                                <div class="flex flex-col gap-2 w-full">
+                                    <label for="passe" class="text-sm font-sora font-light">Mot de passe</label>
+                                    <input type="text" name="passe" placeholder="Votre mot de passe" id="passe" class="w-full h-10 rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent bg-white transition-all duration-300 placeholder:text-[#AFAFAF]">
+                                </div>
+                                <div class="flex flex-col gap-2 w-full">
+                                    <label for="Téléphone" class="text-sm font-sora font-light">Confirmation du mot de passe</label>
+                                    <input type="Confirmation" name="Confirmation" placeholder="Votre mot de passe" id="Confirmation" class="w-full h-10 rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent bg-white transition-all duration-300">
+                                </div>
+                            </div>
+                            <div class="flex items-start lg:items-center gap-4.5">
+                                <div class="custom-checkbox-wrapper relative flex-[34px] min-w-8.5">
+                                    <input type="checkbox" class="hidden" id="terms-checkbox">
+                                    <div class="checkbox-ui relative cursor-pointer">
+                                        <span class="w-8.5 h-8.5 rounded-lg bg-white block"></span>
+                                        <span class="min-w-6 h-6 rounded-lg bg-blue absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 invisible transition-opacity duration-300" style="opacity: 0; visibility: hidden;"></span>
+                                    </div>
+                                </div>
+                                <small class="text-[10px] text-[#AFAFAF] font-family-sora">J'accepte que Casalink conserve mes données de contact dans un but professionnel uniquement pour une durée de trois ans à dater d'aujourd'hui. En soumettant ce formulaire, vous acceptez notre déclaration de confidentialité</small>
+                            </div>
+                            <div class="flex flex-col lg:flex-row items-center gap-10.5">
+                                <a href="javascript:void(0);" class="popup-button text-sm font-sora font-light py-3 bg-primary text-white rounded-4xl px-5.5 h-11 w-full lg:w-50 flex items-center justify-center">Créer mon compte
+                                </a>
+                                <p class="font-family-sora text-sm text-blue font-light">Vous avez déjà un compte ? <a href="javascript:void(0)" class="underline">Connectez-vous ici</a>.</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Comment ça marche ?-->
+    <section class="py-10">
+        <div class="container">
+            <h2 class="text-2xl lg:text-banner font-family-tenor leading-10 lg:leading-14 text-blue uppercase mb-10 lg:mb-28 text-center">Comment ça marche ?</h2>
+            <div class="flex flex-col md:flex-row items-center lg:items-start gap-8 max-w-[1085px] w-full mx-auto">
+                <div class="flex flex-col gap-5 lg:gap-10 items-center text-center">
+                    <div class="w-20 h-20 lg:w-34 lg:h-34 flex items-center justify-center">
+                        <img src="images/comment-icon1.svg" alt="Comment Icon" class="object-contain w-full h-full">
+                    </div>
+                    <p class="text-base font-sora text-blue font-light leading-5">Vous décrivez votre bien en 2 minutes.</p>
+                </div>
+                <img src="images/arrow-right.svg" alt="Arrow Right" class="pt-0 lg:pt-16 rotate-90 lg:rotate-0">
+                <div class="flex flex-col gap-5 lg:gap-10 items-center text-center">
+                    <div class="w-20 h-20 lg:w-34 lg:h-34 flex items-center justify-center">
+                        <img src="images/comment-icon2.svg" alt="Comment Icon" class="object-contain w-full h-full">
+                    </div>
+                    <p class="text-base font-sora text-blue font-light leading-5">Des agences intéressées vous font une offre (commission, services, stratégie).</p>
+                </div>
+                <img src="images/arrow-right.svg" alt="Arrow Right" class="pt-0 lg:pt-16 rotate-90 lg:rotate-0">
+                <div class="flex flex-col gap-5 lg:gap-10 items-center text-center">
+                    <div class="w-20 h-20 lg:w-34 lg:h-34 flex items-center justify-center">
+                        <img src="images/comment-icon3.svg" alt="Comment Icon" class="object-contain w-full h-full">
+                    </div>
+                    <p class="text-base font-sora text-blue font-light leading-5">Vous recevez un tableau clair avec toutes les propositions.</p>
+                </div>
+                <img src="images/arrow-right.svg" alt="Arrow Right" class="pt-0 lg:pt-16 rotate-90 lg:rotate-0">
+                <div class="flex flex-col gap-5 lg:gap-10 items-center text-center">
+                    <div class="w-20 h-20 lg:w-34 lg:h-34 flex items-center justify-center">
+                        <img src="images/comment-icon4.svg" alt="Comment Icon" class="object-contain w-full h-full">
+                    </div>
+                    <p class="text-base font-sora text-blue font-light leading-5">Vous choisissez votre agence. Ou pas. C’est vous qui décidez.</p>
+                </div>
+                <img src="images/arrow-right.svg" alt="Arrow Right" class="pt-0 lg:pt-16 rotate-90 lg:rotate-0">
+                <div class="flex flex-col gap-5 lg:gap-10 items-center text-center">
+                    <div class="w-20 h-20 lg:w-34 lg:h-34 flex items-center justify-center">
+                        <img src="images/comment-icon5.svg" alt="Comment Icon" class="object-contain w-full h-full">
+                    </div>
+                    <p class="text-base font-sora text-blue font-light leading-5">Vous ne payez pas un euro de plus en passant par Casalink, jamais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Avec casalink, c'est votre talent qui fait la différence. -->
+    <section class="py-25 bg-blue/10">
+        <div class="container">
+            <div class="flex flex-col items-center gap-5 max-w-[835px] w-full mx-auto">
+                <h2 class="text-3xl lg:text-banner text-center font-family-tenor text-blue leading-10 lg:leading-14 uppercase">Avec casalink, c'est votre talent qui fait la différence. </h2>
+                <p class="text-lg text-blue font-family-sora font-light">Pas votre budget publicitaire !</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Questions fréquemment posées-->
+    <section class="pt-10 pb-25 lg:py-25">
+        <div class="container">
+            <h2 class="text-2xl lg:text-banner text-center text-blue font-family-tenor mb-10 lg:mb-18 uppercase">Questions fréquemment posées</h2>
+            <div class="max-w-250 mx-auto">
+                <div class="accordion-item pt-8 border-b border-blue/10">
+                    <div class="accordion-header flex items-center justify-between cursor-pointer pb-8">
+                        <h3 class="text-lg lg:text-xl font-sora font-bold text-blue">Qu'est-ce que CasaLink ?
+                        </h3>
+                        <img src="images/plus.svg" alt="Minus">
+                    </div>
+                    <div class="accordion-content" style="overflow: hidden; transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out, padding 0.3s ease-in-out; max-height: 0px; opacity: 0;">
+                        <p class="text-base font-sora text-gray-400 font-light pb-8">CasaLink est une plateforme qui permet aux propriétaires de publier facilement leurs biens immobiliers pour recevoir directement les propositions des agences immobilières intéressées.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-item pt-8 border-b border-blue/10">
+                    <div class="accordion-header flex items-center justify-between cursor-pointer pb-8">
+                        <h3 class="text-lg lg:text-xl font-sora font-bold text-blue">Comment publier mon annonce ?
+                        </h3>
+                        <img src="images/plus.svg" alt="Minus">
+                    </div>
+                    <div class="accordion-content" style="overflow: hidden; transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out, padding 0.3s ease-in-out; max-height: 0px; opacity: 0;">
+                        <p class="text-base font-sora text-gray-400 font-light pb-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque officia sequi ullam veritatis voluptatum? Blanditiis consectetur facilis id laborum maxime minima modi molestiae neque, quam quasi reiciendis vero voluptates? Obcaecati.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-item pt-8 border-b border-blue/10">
+                    <div class="accordion-header flex items-center justify-between cursor-pointer pb-8">
+                        <h3 class="text-lg lg:text-xl font-sora font-bold text-blue">Combien cela coûte-t-il de publier une annonce ?
+                        </h3>
+                        <img src="images/plus.svg" alt="Minus">
+                    </div>
+                    <div class="accordion-content" style="overflow: hidden; transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out, padding 0.3s ease-in-out; max-height: 0px; opacity: 0;">
+                        <p class="text-base font-sora text-gray-400 font-light pb-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque officia sequi ullam veritatis voluptatum? Blanditiis consectetur facilis id laborum maxime minima modi molestiae neque, quam quasi reiciendis vero voluptates? Obcaecati.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-item pt-8 border-b border-blue/10">
+                    <div class="accordion-header flex items-center justify-between cursor-pointer pb-8">
+                        <h3 class="text-lg lg:text-xl font-sora font-bold text-blue">Comment choisir l'agence immobilière ?
+                        </h3>
+                        <img src="images/plus.svg" alt="Minus">
+                    </div>
+                    <div class="accordion-content" style="overflow: hidden; transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out, padding 0.3s ease-in-out; max-height: 0px; opacity: 0;">
+                        <p class="text-base font-sora text-gray-400 font-light pb-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque officia sequi ullam veritatis voluptatum? Blanditiis consectetur facilis id laborum maxime minima modi molestiae neque, quam quasi reiciendis vero voluptates? Obcaecati.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center justify-center mt-14 gap-5 lg:gap-20">
+                <a href="javascript:void(0);" class="max-w-56 w-auto text-sm font-sora font-light py-3 bg-primary text-white rounded-4xl px-14 h-11 flex items-center justify-center">Tarifs</a>
+                <a href="javascript:void(0);" class="max-w-56 w-auto text-sm font-sora font-light py-3 bg-primary text-white rounded-4xl px-14 h-11 flex items-center justify-center">Nous contacter</a>
+            </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer class="relative ">
+        <div class="container relative z-50">
+            <div class="grid grid-cols-3 space-x-30 items-center">
+                <div class="col-span-3 md:col-span-1">
+                    <a href="javascript:void(0);"><img src="images/logo-white.svg" alt="Casalink"></a>
+                </div>
+                <div class="col-span-3 md:col-span-1">
+                    <ul class="flex flex-col gap-2 lg:gap-5">
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light leading-5 text-white hover:text-primary transition duration-300">Accueil</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light leading-5 text-white hover:text-primary transition duration-300">Comment ça marche</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light leading-5 text-white hover:text-primary transition duration-300">FAQ</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light leading-5 text-white hover:text-primary transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-3 md:col-span-1 mt-5 lg:mt-0">
+                    <h2 class="text-lg md:text-2xl text-white font-family-tenor uppercase leading-8">Suivez-nous sur les <br> réseaux</h2>
+                    <ul class="flex items-center gap-2.5 mt-2.5">
+                        <li><a href="javascript:void(0);"><img src="images/fb.svg" alt="Facebook Icon"></a></li>
+                        <li><a href="javascript:void(0);"><img src="images/insta.svg" alt="Instagram Icon"></a></li>
+                        <li><a href="javascript:void(0);"><img src="images/youtube.svg" alt="Youtube Icon"></a></li>
+                        <li><a href="javascript:void(0);"><img src="images/linkedin.svg" alt="Linkedin Icon"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex items-center justify-center pb-7.5 mt-5 lg:mt-0">
+                <small class="text-sm leading-5 font-sora text-white/50">Copyright © 2025 <a href="javascript:void(0);">CasaLink</a> | <a href="javascript:void(0);">Vie privée</a> | Website by <a href="javascript:void(0);">Flexvision</a></small>
+            </div>
+        </div>
+        <div class="absolute -top-10 left-0 right-0 bottom-0">
+            <img src="images/eclipse.svg" alt="Eclipse" class="h-full w-full object-cover">
+        </div>
+        <div class="absolute h-3/5 left-0 right-0 bottom-0 bg-blue">
+        </div>
+    </footer>
+
+    <!--Popup-->
+    <section class="bg-white/10 backdrop-blur-lg fixed top-0 left-0 w-full justify-center items-center z-100 h-full hidden" id="popup">
+        <div class="max-w-[1128px] w-full bg-blue rounded-4xl z-100 relative h-screen flex items-start justify-center mt-20 m-5 p-5">
+            <div class="flex items-center justify-end absolute right-8 top-5">
+                <button class="popup-close cursor-pointer"><img src="images/close.svg" alt="Close"></button>
+            </div>
+            <div class="bg-blue rounded-4xl py-14 px-5 lg:px-20 w-full">
+                <p class="text-base font-family-sora leading-5 text-white text-center mb-16 font-light">Il y a actuellement <b class="text-primary font-light">7 propriétaires</b> qui désirent vendre sur votre région.</p>
+                <div class="flex flex-col gap-5 max-h-[500px] overflow-y-auto">
+                    <div class="flex flex-col lg:flex-row items-center gap-5">
+                        <div class="w-full lg:w-32 h-22">
+                            <img src="images/house-1.png" alt="House" class="w-full h-full object-cover blur-xs">
+                        </div>
+                        <div class="flex flex-col gap-5 w-full">
+                            <div class="hidden lg:flex flex-col lg:flex-row items-start lg:items-center justify-between gap-3 lg:gap-0">
+                                <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[20%] px-5">Commune</p>
+                                <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[40%] px-5">Adresse</p>
+                                <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[20%] px-5">Prix demandé</p>
+                                <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[20%] px-5">Statut</p>
+                            </div>
+                            <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between lg:border lg:border-white rounded-full py-3 gap-3 lg:gap-0">
+                                <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[20%] border-b lg:border-b-0 lg:border-r border-white px-5 py-2.5">Liège</p>
+                                <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[40%] border-b lg:border-b-0 lg:border-r border-white px-5 py-2.5">Rue des Trixhes 1</p>
+                                <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[20%] border-b lg:border-b-0 lg:border-r border-white px-5 py-2.5">225.000 €</p>
+                                <div class="w-full lg:w-[20%] px-5"><button class="text-sm px-5 font-family-sora py-2.5 flex items-center justify-center leading-4 h-full bg-primary text-white rounded-full w-full">Comparer</button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col lg:flex-row items-center gap-5">
+                        <div class="w-full lg:w-32 h-22">
+                            <img src="images/house-2.png" alt="House" class="w-full h-full object-cover blur-xs">
+                        </div>
+                        <div class="flex flex-col gap-5.5 w-full">
+                            <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between lg:border lg:border-white rounded-full py-3 gap-3 lg:gap-0">
+                                <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[20%] border-b lg:border-b-0 lg:border-r border-white px-5 py-2.5">Oupeye</p>
+                                <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[40%] border-b lg:border-b-0 lg:border-r border-white px-5 py-2.5">Rue Vallée 13</p>
+                                <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[20%] border-b lg:border-b-0 lg:border-r border-white px-5 py-2.5">225.000 €</p>
+                                <div class="w-full lg:w-[20%] px-5"><button class="text-sm px-5 font-family-sora py-2.5 flex items-center justify-center leading-4 h-full bg-primary text-white rounded-full w-full">Comparer</button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col lg:flex-row items-center gap-5">
+                        <div class="w-full lg:w-32 h-22">
+                            <img src="images/house-3.png" alt="House" class="w-full h-full object-cover blur-xs">
+                        </div>
+                        <div class="flex flex-col gap-5.5 w-full">
+                            <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between lg:border lg:border-white rounded-full py-3 gap-3 lg:gap-0">
+                                <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[20%] border-b lg:border-b-0 lg:border-r border-white px-5 py-2.5">Oupeye</p>
+                                <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[40%] border-b lg:border-b-0 lg:border-r border-white px-5 py-2.5">Rue Vallée 13</p>
+                                <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[20%] border-b lg:border-b-0 lg:border-r border-white px-5 py-2.5">225.000 €</p>
+                                <div class="w-full lg:w-[20%] px-5"><button class="text-sm px-5 font-family-sora py-2.5 flex items-center justify-center leading-4 h-full bg-primary text-white rounded-full w-full">Comparer</button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col lg:flex-row items-center gap-5">
+                        <div class="w-full lg:w-32 h-22">
+                            <img src="images/house-4.png" alt="House" class="w-full h-full object-cover blur-xs">
+                        </div>
+                        <div class="flex flex-col gap-5.5 w-full">
+                            <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between lg:border lg:border-white rounded-full py-3 gap-3 lg:gap-0">
+                                <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[20%] border-b lg:border-b-0 lg:border-r border-white px-5 py-2.5">Oupeye</p>
+                                <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[40%] border-b lg:border-b-0 lg:border-r border-white px-5 py-2.5">Rue Vallée 13</p>
+                                <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[20%] border-b lg:border-b-0 lg:border-r border-white px-5 py-2.5">225.000 €</p>
+                                <div class="w-full lg:w-[20%] px-5"><button class="text-sm px-5 font-family-sora py-2.5 flex items-center justify-center leading-4 h-full bg-primary text-white rounded-full w-full">Comparer</button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col lg:flex-row items-center gap-5">
+                        <div class="w-full lg:w-32 h-22">
+                            <img src="images/house-5.png" alt="House" class="w-full h-full object-cover blur-xs">
+                        </div>
+                        <div class="flex flex-col gap-5.5 w-full">
+                            <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between lg:border lg:border-white rounded-full py-3 gap-3 lg:gap-0">
+                                <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[20%] border-b lg:border-b-0 lg:border-r border-white px-5 py-2.5">Oupeye</p>
+                                <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[40%] border-b lg:border-b-0 lg:border-r border-white px-5 py-2.5">Rue Vallée 13</p>
+                                <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[20%] border-b lg:border-b-0 lg:border-r border-white px-5 py-2.5">225.000 €</p>
+                                <div class="w-full lg:w-[20%] px-5"><button class="text-sm px-5 font-family-sora py-2.5 flex items-center justify-center leading-4 h-full bg-primary text-white rounded-full w-full">Comparer</button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col lg:flex-row items-center gap-5">
+                        <div class="w-full lg:w-32 h-22">
+                            <img src="images/house-6.png" alt="House" class="w-full h-full object-cover blur-xs">
+                        </div>
+                        <div class="flex flex-col gap-5.5 w-full">
+                            <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between lg:border lg:border-white rounded-full py-3 gap-3 lg:gap-0">
+                                <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[20%] border-b lg:border-b-0 lg:border-r border-white px-5 py-2.5">Oupeye</p>
+                                <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[40%] border-b lg:border-b-0 lg:border-r border-white px-5 py-2.5">Rue Vallée 13</p>
+                                <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[20%] border-b lg:border-b-0 lg:border-r border-white px-5 py-2.5">225.000 €</p>
+                                <div class="w-full lg:w-[20%] px-5"><button class="text-sm px-5 font-family-sora py-2.5 flex items-center justify-center leading-4 h-full bg-primary text-white rounded-full w-full">Comparer</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Popup 2-->
+    <section class="bg-white/10 backdrop-blur-lg fixed top-0 left-0 w-full justify-center items-center z-50 h-full hidden" id="popup2">
+        <div class="max-w-[848px] w-full bg-blue rounded-4xl z-100 relative h-[425px] flex items-center justify-center">
+            <div class="flex items-center justify-end absolute right-8 top-5">
+                <button class="popup-close cursor-pointer"><img src="images/close.svg" alt="Close"></button>
+            </div>
+            <div class="flex flex-col max-w-[530px] items-center text-center">
+                <h2 class="font-family-tenor text-3xl text-white uppercase mb-4.5">Bienvenue, agent immo !</h2>
+                <p class="font-family-sora text-base text-white font-light mb-14">Nous sommes heureux de vous accueillir parmi nous. Vous allez maintenant accéder à votre interface personnelle.</p>
+                <a href="javascript:void(0);" class="py-3 px-14 border border-white rounded-4xl text-sm font-family-sora leading-5 text-white hover:bg-white hover:text-blue transition duration-300">Commencer à postuler pour des biens</a>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="accordion.js"></script>
+<script src="header.js"></script>
+<script src="checkbox.js"></script>
+<script src="popup.js"></script>
+</html>

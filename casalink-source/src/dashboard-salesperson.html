@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="icon" href="./images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="./images/favicon.png">
+    <link rel="apple-touch-icon" href="./images/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casa Link</title>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div class="flex items-center justify-between w-full p-5 lg:py-6 xl:pl-10 xl:pr-12 max-w-[1366px] mx-auto">
+            <div class="flex items-center gap-4 xl:gap-15">
+                <a href="index.html"><img src="images/logo.svg" alt="Casalink"></a>
+                <nav class="hidden lg:block">
+                    <ul class="flex space-x-6 xl:space-x-16">
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light  text-primary hover:text-primary transition duration-30">Accueil</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300">Comment ça marche</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-30">FAQ</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-30">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="hidden lg:flex items-center space-x-6">
+                <a href="javascript:void(0);" class="text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-10">Je suis agent immobilier</a>
+                <a href="javascript:void(0);" class="text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-5">Connexion</a>
+            </div>
+            <button id="menu-toggle" class="lg:hidden flex flex-col gap-1.5 relative w-6 h-6 justify-center items-center">
+                <span class="block w-6 h-0.5 bg-blue transition-all duration-300 origin-center"></span>
+                <span class="block w-6 h-0.5 bg-blue transition-all duration-300 origin-center"></span>
+                <span class="block w-6 h-0.5 bg-blue transition-all duration-300 origin-center"></span>
+            </button>
+        </div>
+        <nav id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-200">
+            <div class="px-5 py-4">
+                <ul class="flex flex-col space-y-3">
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">Accueil</a></li>
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">Comment ça marche</a></li>
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">FAQ</a></li>
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">Contact</a></li>
+                    <li class="border-t border-gray-200 pt-3 mt-3">
+                        <a href="javascript:void(0);" class="block text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-10 text-center">Je suis agent immobilier</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="block text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-5 text-center">Connexion</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!--Bienvenue, John Smith !-->
+    <section class="py-10 lg:py-20">
+        <div class="container">
+            <h1 class="text-3xl lg:text-banner uppercase text-blue leading-14 text-center font-family-tenor">Bienvenue, John Smith !</h1>
+            <div class="bg-blue rounded-4xl py-14 px-5 lg:px-40 mt-16">
+                <p class="text-base font-family-sora leading-5 text-white text-center font-light">Vos biens déjà ajoutés</p>
+                <div class="flex flex-col lg:flex-row items-center gap-5 mt-10 overflow-x-auto lg:overflow-visible">
+                    <div class="w-full lg:w-32 h-40 lg:h-22">
+                        <img src="images/house-1.png" alt="House" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex flex-col gap-5.5 w-full">
+                        <div class="hidden lg:flex flex-col lg:flex-row items-start lg:items-center justify-between gap-3 lg:gap-0">
+                            <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[20%] px-5">Commune</p>
+                            <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[40%] px-5">Adresse</p>
+                            <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[20%] px-5">Prix demandé</p>
+                            <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[20%] px-5">Statut</p>
+                        </div>
+                        <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between lg:border lg:border-white rounded-full py-3 gap-3 lg:gap-0">
+                            <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[20%] border-b lg:border-b-0 lg:border-r border-white px-5 py-2.5"><b class="inline-block lg:hidden mr-3 text-primary">Commune:</b>Liège</p>
+                            <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[40%] border-b lg:border-b-0 lg:border-r border-white px-5 py-2.5"><b class="inline-block lg:hidden mr-3 text-primary">Adresse :</b>Rue des Trixhes 1</p>
+                            <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[20%] border-b lg:border-b-0 lg:border-r border-white px-5 py-2.5"><b class="inline-block lg:hidden mr-3 text-primary">Prix demandé :</b>225.000 €</p>
+                            <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[20%] px-5 py-2.5"><b class="inline-block lg:hidden mr-3 text-primary">Statut :</b>En attente</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col lg:flex-row items-center gap-5 mt-10 overflow-x-auto lg:overflow-visible">
+                    <div class="w-full lg:w-32 h-40 lg:h-22">
+                        <img src="images/house-2.png" alt="House" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex flex-col gap-5.5 w-full">
+                        <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between lg:border lg:border-white rounded-full py-3 gap-3 lg:gap-0">
+                            <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[20%] border-b lg:border-b-0 lg:border-r border-white px-5 py-2.5"><b class="inline-block lg:hidden mr-3 text-primary">Commune :</b>Oupeye</p>
+                            <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[40%] border-b lg:border-b-0 lg:border-r border-white px-5 py-2.5"><b class="inline-block lg:hidden mr-3 text-primary">Adresse :</b>Rue Vallée 13</p>
+                            <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[20%] border-b lg:border-b-0 lg:border-r border-white px-5 py-2.5"><b class="inline-block lg:hidden mr-3 text-primary">Prix demandé :</b>225.000 €</p>
+                            <div class="w-full lg:w-[20%] px-5"><button class="text-sm px-5 font-family-sora py-2.5 flex items-center justify-center leading-4 h-full bg-white text-blue rounded-full w-full">Comparer</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Avec quelle agence souhaitez-vous poursuivre ?-->
+    <section class="pt-0 lg:pt-20 pb-40">
+        <div class="container">
+            <h2 class="font-family-tenor text-3xl lg:text-banner text-blue uppercase text-center">Prêt à ajouter votre bien ?
+            </h2>
+            <p class="text-base font-family-sora leading-9 text-[#AFAFAF] font-light text-center mt-3">Lancez votre demande en 2 minutes. Sans engagement.</p>
+            <a href="javascript:void(0);" class="text-sm font-sora font-light py-3 bg-primary text-white rounded-4xl px-5.5 h-11 w-full lg:w-50 mx-auto mt-10 flex items-center justify-center">Ajouter mon bien</a>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer class="relative">
+        <div class="container relative z-50">
+            <div class="grid grid-cols-3 space-x-30 items-center">
+                <div class="col-span-3 md:col-span-1">
+                    <a href="javascript:void(0);"><img src="images/logo-white.svg" alt="Casalink"></a>
+                </div>
+                <div class="col-span-3 md:col-span-1">
+                    <ul class="flex flex-col gap-2 lg:gap-5">
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light leading-5 text-white hover:text-primary transition duration-300">Accueil</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light leading-5 text-white hover:text-primary transition duration-300">Comment ça marche</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light leading-5 text-white hover:text-primary transition duration-300">FAQ</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light leading-5 text-white hover:text-primary transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-3 md:col-span-1 mt-5 lg:mt-0">
+                    <h2 class="text-lg md:text-2xl text-white font-family-tenor uppercase leading-8">Suivez-nous sur les <br> réseaux</h2>
+                    <ul class="flex items-center gap-2.5 mt-2.5">
+                        <li><a href="javascript:void(0);"><img src="images/fb.svg" alt="Facebook Icon"></a></li>
+                        <li><a href="javascript:void(0);"><img src="images/insta.svg" alt="Instagram Icon"></a></li>
+                        <li><a href="javascript:void(0);"><img src="images/youtube.svg" alt="Youtube Icon"></a></li>
+                        <li><a href="javascript:void(0);"><img src="images/linkedin.svg" alt="Linkedin Icon"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex items-center justify-center pb-7.5 mt-5 lg:mt-0">
+                <small class="text-sm leading-5 font-sora text-white/50">Copyright © 2025 <a href="javascript:void(0);">CasaLink</a> | <a href="javascript:void(0);">Vie privée</a> | Website by <a href="javascript:void(0);">Flexvision</a></small>
+            </div>
+        </div>
+        <div class="absolute -top-8 lg:-top-24 left-0 right-0 bottom-0">
+            <img src="images/eclipse.svg" alt="Eclipse" class="h-full w-full object-cover">
+        </div>
+        <div class="absolute h-3/5 left-0 right-0 bottom-0 bg-blue">
+        </div>
+    </footer>
+</body>
+<script src="accordion.js"></script>
+<script src="header.js"></script>
+<script src="checkbox.js"></script>
+<script src="popup.js"></script>
+</html>

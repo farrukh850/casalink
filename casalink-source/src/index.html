@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="icon" href="./images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="./images/favicon.png">
+    <link rel="apple-touch-icon" href="./images/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casa Link</title>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div class="flex items-center justify-between w-full p-5 lg:py-6 xl:pl-10 xl:pr-12 max-w-[1366px] mx-auto">
+            <div class="flex items-center gap-4 xl:gap-15">
+                <a href="index.html"><img src="images/logo.svg" alt="Casalink"></a>
+                <nav class="hidden lg:block">
+                    <ul class="flex space-x-6 xl:space-x-16">
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light  text-primary hover:text-primary transition duration-30">Accueil</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300">Comment ça marche</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-30">FAQ</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-30">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="hidden lg:flex items-center space-x-6">
+                <a href="javascript:void(0);" class="text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-10">Je suis agent immobilier</a>
+                <a href="javascript:void(0);" class="text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-5">Connexion</a>
+            </div>
+            <button id="menu-toggle" class="lg:hidden flex flex-col gap-1.5 relative w-6 h-6 justify-center items-center">
+                <span class="block w-6 h-0.5 bg-blue transition-all duration-300 origin-center"></span>
+                <span class="block w-6 h-0.5 bg-blue transition-all duration-300 origin-center"></span>
+                <span class="block w-6 h-0.5 bg-blue transition-all duration-300 origin-center"></span>
+            </button>
+        </div>
+        <nav id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-200">
+            <div class="px-5 py-4">
+                <ul class="flex flex-col space-y-3">
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">Accueil</a></li>
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">Comment ça marche</a></li>
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">FAQ</a></li>
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">Contact</a></li>
+                    <li class="border-t border-gray-200 pt-3 mt-3">
+                        <a href="javascript:void(0);" class="block text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-10 text-center">Je suis agent immobilier</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="block text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-5 text-center">Connexion</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!--Comparez les agences immobilières. Choisissez en toute liberté.-->
+    <section>
+        <div class="container">
+            <div class="rounded-4xl bg-blue/10 flex flex-col sm:flex-row items-center justify-between py-8 lg:py-15 px-5 lg:pr-20.5 lg:pl-23 gap-5 lg:gap-30">
+                <div class="flex-1 flex flex-col">
+                    <h1 class="text-xl lg:text-4xl font-family-tenor leading-8 lg:leading-14 text-blue uppercase mb-5 lg:mb-8">Comparez les agences immobilières. Choisissez en toute liberté.</h1>
+                    <p class="text-base font-family-sora font-light text-blue">Recevez jusqu’à 5 propositions d’agences. Sans publier votre bien, sans engagement.</p>
+                    <div class="flex flex-col md:flex-row lg:items-center space-x-6.5 space-y-2 lg:space-y-0 mt-5 lg:mt-10">
+                        <a href="javascript:void(0);" class="text-sm font-sora font-light py-3 bg-primary text-white rounded-4xl px-5.5 h-11 w-full lg:w-64 flex items-center justify-center">Commencer ma comparaison</a>
+                        <a href="javascript:void(0);" class="text-sm font-sora font-light py-3 text-blue rounded-4xl px-5.5 h-11 w-full lg:w-51 border border-blue flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition duration-300">Comment ça marche ?
+                        </a>
+                    </div>
+                </div>
+                <div class="flex-1 relative">
+                    <img src="images/banner-image.png" alt="Banner Image">
+                    <button class="absolute cursor-pointer top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"><img src="images/play.svg" class="w-10 lg:w-20.5" alt="Play Button"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Comment ça marche ?-->
+    <section class="py-10 lg:py-32">
+        <div class="container">
+            <h2 class="text-2xl lg:text-banner font-family-tenor leading-10 lg:leading-14 text-blue uppercase mb-10 lg:mb-28 text-center">Comment ça marche ?</h2>
+            <div class="flex flex-col md:flex-row items-center lg:items-start gap-8 max-w-[1085px] w-full mx-auto">
+                <div class="flex flex-col gap-5 lg:gap-10 items-center text-center">
+                    <div class="w-20 h-20 lg:w-34 lg:h-34 flex items-center justify-center">
+                        <img src="images/comment-icon1.svg" alt="Comment Icon" class="object-contain w-full h-full">
+                    </div>
+                    <p class="text-base font-sora text-blue font-light leading-5">Vous décrivez votre bien en 2 minutes.</p>
+                </div>
+                <img src="images/arrow-right.svg" alt="Arrow Right" class="pt-0 lg:pt-16 rotate-90 lg:rotate-0">
+                <div class="flex flex-col gap-5 lg:gap-10 items-center text-center">
+                    <div class="w-20 h-20 lg:w-34 lg:h-34 flex items-center justify-center">
+                        <img src="images/comment-icon2.svg" alt="Comment Icon" class="object-contain w-full h-full">
+                    </div>
+                    <p class="text-base font-sora text-blue font-light leading-5">Des agences intéressées vous font une offre (commission, services, stratégie).</p>
+                </div>
+                <img src="images/arrow-right.svg" alt="Arrow Right" class="pt-0 lg:pt-16 rotate-90 lg:rotate-0">
+                <div class="flex flex-col gap-5 lg:gap-10 items-center text-center">
+                    <div class="w-20 h-20 lg:w-34 lg:h-34 flex items-center justify-center">
+                        <img src="images/comment-icon3.svg" alt="Comment Icon" class="object-contain w-full h-full">
+                    </div>
+                    <p class="text-base font-sora text-blue font-light leading-5">Vous recevez un tableau clair avec toutes les propositions.</p>
+                </div>
+                <img src="images/arrow-right.svg" alt="Arrow Right" class="pt-0 lg:pt-16 rotate-90 lg:rotate-0">
+                <div class="flex flex-col gap-5 lg:gap-10 items-center text-center">
+                    <div class="w-20 h-20 lg:w-34 lg:h-34 flex items-center justify-center">
+                        <img src="images/comment-icon4.svg" alt="Comment Icon" class="object-contain w-full h-full">
+                    </div>
+                    <p class="text-base font-sora text-blue font-light leading-5">Vous choisissez votre agence. Ou pas. C’est vous qui décidez.</p>
+                </div>
+                <img src="images/arrow-right.svg" alt="Arrow Right" class="pt-0 lg:pt-16 rotate-90 lg:rotate-0">
+                <div class="flex flex-col gap-5 lg:gap-10 items-center text-center">
+                    <div class="w-20 h-20 lg:w-34 lg:h-34 flex items-center justify-center">
+                        <img src="images/comment-icon5.svg" alt="Comment Icon" class="object-contain w-full h-full">
+                    </div>
+                    <p class="text-base font-sora text-blue font-light leading-5">Vous ne payez pas un euro de plus en passant par Casalink, jamais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Pourquoi choisir Casalink ?-->
+    <section  class="pb-20">
+        <div class="container">
+            <h2 class="text-2xl lg:text-banner font-family-tenor leading-10 lg:leading-14 text-blue uppercase mb-12 text-center">Pourquoi choisir Casalink ?</h2>
+            <div class="grid grid-cols-2 max-w-[1085px] mx-auto gap-x-40 gap-y-8">
+                <div class="col-span-2 sm:col-span-1 flex items-center gap-8">
+                    <div class="w-18 h-18 flex items-center justify-center">
+                        <img src="images/choose-icon1.svg" alt="Choose Icon">
+                    </div>
+                    <p class="text-base font-sora text-blue font-light leading-5">Un service neutre qui vous permet d'y voir plus clair
+                    </p>
+                </div>
+                <div class="col-span-2 sm:col-span-1 flex items-center gap-8">
+                    <div class="w-18 h-18 flex items-center justify-center">
+                        <img src="images/choose-icon2.svg" alt="Choose Icon">
+                    </div>
+                    <p class="text-base font-sora text-blue font-light leading-5">Votre bien n’est jamais publié
+                    </p>
+                </div>
+                <div class="col-span-2 sm:col-span-1 flex items-center gap-8">
+                    <div class="w-18 h-18 flex items-center justify-center">
+                        <img src="images/choose-icon3.svg" alt="Choose Icon">
+                    </div>
+                    <p class="text-base font-sora text-blue font-light leading-5">Comparaison anonyme et sécurisée
+                    </p>
+                </div>
+                <div class="col-span-2 sm:col-span-1 flex items-center gap-8">
+                    <div class="w-18 h-18 flex items-center justify-center">
+                        <img src="images/choose-icon4.svg" alt="Choose Icon">
+                    </div>
+                    <p class="text-base font-sora text-blue font-light leading-5">Vous restez 100 % libre de votre choix
+                    </p>
+                </div>
+                <div class="col-span-2 sm:col-span-1 flex items-center gap-8">
+                    <div class="w-18 h-18 flex items-center justify-center">
+                        <img src="images/choose-icon5.svg" alt="Choose Icon">
+                    </div>
+                    <p class="text-base font-sora text-blue font-light leading-5">Sélection d’agences locales sérieuses</p>
+                </div>
+                <div class="col-span-2 sm:col-span-1 flex items-center gap-8">
+                    <div class="w-18 h-18 flex items-center justify-center">
+                        <img src="images/choose-icon6.svg" alt="Choose Icon">
+                    </div>
+                    <p class="text-base font-sora text-blue font-light leading-5">Une sélection en 48h</p>
+                </div>
+            </div>
+            <div class="flex items-center justify-center mt-14">
+                <a href="javascript:void(0);" class="text-sm font-sora font-light py-3 bg-primary text-white rounded-4xl px-5.5 h-11 w-35 flex items-center justify-center">Comparez</a>
+            </div>
+        </div>
+    </section>
+
+    <!--Testimonials-->
+    <section class="">
+        <div class="container">
+            <div class="px-10 py-20 lg:pl-50 lg:pt-36 relative rounded-4xl bg-[url(images/happy-man.png)] h-auto lg:h-105 overflow-hidden">
+                <div class="max-w-96 w-full relative z-50">
+                    <p class="text-base font-sora leading-5 font-light mb-14 text-white">Grâce à Casalink, j’ai pu comparer 4 agences sans stress. Je ne savais pas qu’il y avait autant de différences sur les services proposés !</p>
+                    <h5 class="text-lg font-sora font-bold mb-6 text-white">— Simon, vendeur à Wavre</h5>
+                    <ul class="flex items-center gap-0.5">
+                        <li><img src="images/star.svg" alt="Star"></li>
+                        <li><img src="images/star.svg" alt="Star"></li>
+                        <li><img src="images/star.svg" alt="Star"></li>
+                        <li><img src="images/star.svg" alt="Star"></li>
+                        <li><img src="images/star.svg" alt="Star"></li>
+                    </ul>
+                </div>
+                <div class="absolute top-0 bottom-0 left-0 right-0">
+                    <img src="images/gradient-blue.svg" alt="Gradient" class="h-full object-cover w-full lg:w-auto">
+                </div>
+                <span class="absolute top-5 lg:top-7 left-5 lg:left-30"><img src="images/quotes.svg" alt="Quotes" class="w-10 lg:w-auto"></span>
+            </div>
+        </div>
+    </section>
+
+    <!--Prêt à comparer ?-->
+    <section class="pb-28 bg-blue/10 -mt-56 pt-60">
+        <div class="flex flex-col items-center text-center mt-20">
+            <h2 class="text-2xl lg:text-banner text-blue font-family-tenor mb-3 uppercase">Prêt à comparer ?</h2>
+            <p class="text-lg text-blue leading-6 font-sora mb-8 font-light">Lancez votre demande en 2 minutes. Sans engagement.</p>
+            <a href="javascript:void(0);" class="text-sm font-sora font-light py-3 bg-primary text-white rounded-4xl px-14 h-11 flex items-center justify-center">Commencer</a>
+        </div>
+    </section>
+
+    <!--Questions fréquemment posées-->
+    <section class="py-10 lg:py-41">
+        <div class="container">
+            <h2 class="text-2xl lg:text-banner text-center text-blue font-family-tenor mb-10 lg:mb-18 uppercase">Questions fréquemment posées</h2>
+            <div class="max-w-250 mx-auto">
+                <div class="accordion-item pt-8 border-b border-blue/10">
+                    <div class="accordion-header flex items-center justify-between cursor-pointer pb-8">
+                        <h3 class="text-lg lg:text-xl font-sora font-bold text-blue">Qu'est-ce que CasaLink ?
+                        </h3>
+                        <img src="images/plus.svg" alt="Minus">
+                    </div>
+                    <div class="accordion-content">
+                        <p class="text-base font-sora text-gray-400 font-light pb-8">CasaLink est une plateforme qui permet aux propriétaires de publier facilement leurs biens immobiliers pour recevoir directement les propositions des agences immobilières intéressées.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-item pt-8 border-b border-blue/10">
+                    <div class="accordion-header flex items-center justify-between cursor-pointer pb-8">
+                        <h3 class="text-lg lg:text-xl font-sora font-bold text-blue">Comment publier mon annonce ?
+                        </h3>
+                        <img src="images/plus.svg" alt="Minus">
+                    </div>
+                    <div class="accordion-content">
+                        <p class="text-base font-sora text-gray-400 font-light pb-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque officia sequi ullam veritatis voluptatum? Blanditiis consectetur facilis id laborum maxime minima modi molestiae neque, quam quasi reiciendis vero voluptates? Obcaecati.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-item pt-8 border-b border-blue/10">
+                    <div class="accordion-header flex items-center justify-between cursor-pointer pb-8">
+                        <h3 class="text-lg lg:text-xl font-sora font-bold text-blue">Combien cela coûte-t-il de publier une annonce ?
+                        </h3>
+                        <img src="images/plus.svg" alt="Minus">
+                    </div>
+                    <div class="accordion-content">
+                        <p class="text-base font-sora text-gray-400 font-light pb-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque officia sequi ullam veritatis voluptatum? Blanditiis consectetur facilis id laborum maxime minima modi molestiae neque, quam quasi reiciendis vero voluptates? Obcaecati.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-item pt-8 border-b border-blue/10">
+                    <div class="accordion-header flex items-center justify-between cursor-pointer pb-8">
+                        <h3 class="text-lg lg:text-xl font-sora font-bold text-blue">Comment choisir l'agence immobilière ?
+                        </h3>
+                        <img src="images/plus.svg" alt="Minus">
+                    </div>
+                    <div class="accordion-content">
+                        <p class="text-base font-sora text-gray-400 font-light pb-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque officia sequi ullam veritatis voluptatum? Blanditiis consectetur facilis id laborum maxime minima modi molestiae neque, quam quasi reiciendis vero voluptates? Obcaecati.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--découvrez-en plus-->
+    <section class="pb-25">
+        <div class="container">
+            <h2 class="text-2xl lg:text-banner text-center text-blue font-family-tenor mb-10 lg:mb-16 uppercase">découvrez-en plus</h2>
+            <div class="grid grid-cols-12 gap-7.5 max-w-[1057px] mx-auto">
+                <div class="col-span-12 sm:col-span-6 lg:col-span-3 relative h-[338px] overflow-hidden">
+                    <img src="images/discover-icon1.png" alt="Discover Icon" class="w-full h-full object-cover rounded-3xl">
+                    <div class="absolute left-7 bottom-4 z-50 right-5">
+                        <div class="text-base font-sora font-bold text-white mb-3">Le 18 avril 2025</div>
+                        <h3 class="text-sm leading-5 text-white font-light max-w-38 w-full">Ceci est un article de blog plus ou moins long.</h3>
+                        <a href="javascript:void(0);" class="float-right cursor-pointer w-6 h-6"><img src="images/plus-white.svg" alt="Plus" class="w-6 h-6 object-contain"></a>
+                    </div>
+                    <img src="images/gradient-bottom.svg" alt="Gradient" class="absolute bottom-0 left-0 right-0 w-full object-cover h-full lg:h-auto rounded-3xl">
+                </div>
+                <div class="col-span-12 sm:col-span-6 lg:col-span-3 relative h-[338px] overflow-hidden">
+                    <img src="images/discover-icon2.png" alt="Discover Icon" class="w-full h-full object-cover rounded-3xl">
+                    <div class="absolute left-7 bottom-4 z-50 right-5">
+                        <div class="text-base font-sora font-bold text-white mb-3">Le 18 avril 2025</div>
+                        <h3 class="text-sm leading-5 text-white font-light max-w-38 w-full">Ceci est un article de blog plus ou moins long.</h3>
+                        <a href="javascript:void(0);" class="float-right cursor-pointer w-6 h-6"><img src="images/plus-white.svg" alt="Plus" class="w-6 h-6 object-contain"></a>
+                    </div>
+                    <img src="images/gradient-bottom.svg" alt="Gradient" class="absolute bottom-0 left-0 right-0 w-full object-cover h-full lg:h-auto rounded-3xl">
+                </div>
+                <div class="col-span-12 sm:col-span-6 lg:col-span-3 relative h-[338px] overflow-hidden">
+                    <img src="images/discover-icon3.png" alt="Discover Icon" class="w-full h-full object-cover rounded-3xl">
+                    <div class="absolute left-7 bottom-4 z-50 right-5">
+                        <div class="text-base font-sora font-bold text-white mb-3">Le 18 avril 2025</div>
+                        <h3 class="text-sm leading-5 text-white font-light max-w-38 w-full">Ceci est un article de blog plus ou moins long.</h3>
+                        <a href="javascript:void(0);" class="float-right cursor-pointer w-6 h-6"><img src="images/plus-white.svg" alt="Plus" class="w-6 h-6 object-contain"></a>
+                    </div>
+                    <img src="images/gradient-bottom.svg" alt="Gradient" class="absolute bottom-0 left-0 right-0 w-full object-cover h-full lg:h-auto rounded-3xl">
+                </div>
+                <div class="col-span-12 sm:col-span-6 lg:col-span-3 relative h-[338px] overflow-hidden">
+                    <img src="images/discover-icon4.png" alt="Discover Icon" class="w-full h-full object-cover rounded-3xl">
+                    <div class="absolute left-7 bottom-4 z-50 right-5">
+                        <div class="text-base font-sora font-bold text-white mb-3">Le 18 avril 2025</div>
+                        <h3 class="text-sm leading-5 text-white font-light max-w-38 w-full">Ceci est un article de blog plus ou moins long.</h3>
+                        <a href="javascript:void(0);" class="float-right cursor-pointer w-6 h-6"><img src="images/plus-white.svg" alt="Plus" class="w-6 h-6 object-contain"></a>
+                    </div>
+                    <img src="images/gradient-bottom.svg" alt="Gradient" class="absolute bottom-0 left-0 right-0 w-full object-cover h-full lg:h-auto rounded-3xl">
+                </div>
+            </div>
+            <div class="flex items-center justify-center mt-14">
+                <a href="javascript:void(0);" class="text-sm font-sora font-light py-3 bg-primary text-white rounded-4xl px-14 h-11 flex items-center justify-center">Voir tous les articles</a>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="relative ">
+        <div class="container relative z-50">
+            <div class="grid grid-cols-3 space-x-30 items-center">
+                <div class="col-span-3 md:col-span-1">
+                    <a href="javascript:void(0);"><img src="images/logo-white.svg" alt="Casalink"></a>
+                </div>
+                <div class="col-span-3 md:col-span-1">
+                    <ul class="flex flex-col gap-2 lg:gap-5">
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light leading-5 text-white hover:text-primary transition duration-300">Accueil</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light leading-5 text-white hover:text-primary transition duration-300">Comment ça marche</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light leading-5 text-white hover:text-primary transition duration-300">FAQ</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light leading-5 text-white hover:text-primary transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-3 md:col-span-1 mt-5 lg:mt-0">
+                    <h2 class="text-lg md:text-2xl text-white font-family-tenor uppercase leading-8">Suivez-nous sur les <br> réseaux</h2>
+                    <ul class="flex items-center gap-2.5 mt-2.5">
+                        <li><a href="javascript:void(0);"><img src="images/fb.svg" alt="Facebook Icon"></a></li>
+                        <li><a href="javascript:void(0);"><img src="images/insta.svg" alt="Instagram Icon"></a></li>
+                        <li><a href="javascript:void(0);"><img src="images/youtube.svg" alt="Youtube Icon"></a></li>
+                        <li><a href="javascript:void(0);"><img src="images/linkedin.svg" alt="Linkedin Icon"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex items-center justify-center pb-7.5 mt-5 lg:mt-0">
+                <small class="text-sm leading-5 font-sora text-white/50">Copyright © 2025 <a href="javascript:void(0);">CasaLink</a> | <a href="javascript:void(0);">Vie privée</a> | Website by <a href="javascript:void(0);">Flexvision</a></small>
+            </div>
+        </div>
+        <div class="absolute -top-10 left-0 right-0 bottom-0">
+            <img src="images/eclipse.svg" alt="Eclipse" class="h-full w-full object-cover">
+        </div>
+        <div class="absolute h-3/5 left-0 right-0 bottom-0 bg-blue">
+        </div>
+    </footer>
+
+
+    <!--Popup-->
+    <section class="bg-white/10 backdrop-blur-lg fixed top-0 left-0 w-full justify-center items-center z-50 h-full hidden" id="popup">
+        <div class="max-w-[848px] w-full bg-blue rounded-4xl z-100 relative flex items-center justify-center m-5 p-5">
+            <div class="flex items-center justify-end absolute right-8 top-8 lg:top-5">
+                <button class="popup-close cursor-pointer"><img src="images/close.svg" alt="Close" class="w-5"></button>
+            </div>
+            <div class="flex flex-col max-w-[360px] mx-auto items-center text-center py-18">
+                <h2 class="font-family-tenor text-3xl text-white uppercase mb-4.5">Identifiez-vous ou créez un compte</h2>
+                <form action="#" class="flex flex-col gap-7">
+                    <div class="flex flex-col items-start gap-2">
+                        <label for="Mail" class="text-sm font-sora font-light text-white">Mail</label>
+                        <input type="text" name="Mail" id="Mail" placeholder="john.smith@gmail.com" class="w-72 h-10 rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent bg-white transition-all duration-300 placeholder:text-[#AFAFAF]">
+                    </div>
+                    <div class="flex flex-col items-start gap-2">
+                        <label for="passe" class="text-sm font-sora font-light text-white">Mot de passe</label>
+                        <input type="text" name="passe" id="passe" placeholder="Votre mot de passe" class="w-72 h-10 rounded-lg px-5 focus:outline-none focus:ring-1 focus:ring-blue focus:border-transparent bg-white transition-all duration-300 placeholder:text-[#AFAFAF]">
+                    </div>
+                    <input type="submit" value="Connexion" class="text-sm font-sora font-light py-3 bg-primary text-white rounded-4xl px-5.5 h-11 w-full lg:w-50 mx-auto mt-10 flex items-center justify-center">
+                </form>
+                <div class="flex flex-col gap-3 mt-12">
+                    <a href="#" class="text-sm font-family-sora text-white leading-5">Mot de passe oublié ?</a>
+                    <p class="text-sm font-family-sora text-white leading-5">Vous n'avez pas de compte ? <a href="#" class="underline">Créez le ici</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="accordion.js"></script>
+<script src="header.js"></script>
+<script src="popup.js"></script>
+</html>

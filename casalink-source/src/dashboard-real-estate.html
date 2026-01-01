@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="icon" href="./images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="./images/favicon.png">
+    <link rel="apple-touch-icon" href="./images/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casa Link</title>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div class="flex items-center justify-between w-full p-5 lg:py-6 xl:pl-10 xl:pr-12 max-w-[1366px] mx-auto">
+            <div class="flex items-center gap-4 xl:gap-15">
+                <a href="index.html"><img src="images/logo.svg" alt="Casalink"></a>
+                <nav class="hidden lg:block">
+                    <ul class="flex space-x-6 xl:space-x-16">
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light  text-primary hover:text-primary transition duration-30">Accueil</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300">Comment ça marche</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-30">FAQ</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-30">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="hidden lg:flex items-center space-x-6">
+                <a href="javascript:void(0);" class="text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-10">Je suis agent immobilier</a>
+                <a href="javascript:void(0);" class="text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-5">Connexion</a>
+            </div>
+            <button id="menu-toggle" class="lg:hidden flex flex-col gap-1.5 relative w-6 h-6 justify-center items-center">
+                <span class="block w-6 h-0.5 bg-blue transition-all duration-300 origin-center"></span>
+                <span class="block w-6 h-0.5 bg-blue transition-all duration-300 origin-center"></span>
+                <span class="block w-6 h-0.5 bg-blue transition-all duration-300 origin-center"></span>
+            </button>
+        </div>
+        <nav id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-200">
+            <div class="px-5 py-4">
+                <ul class="flex flex-col space-y-3">
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">Accueil</a></li>
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">Comment ça marche</a></li>
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">FAQ</a></li>
+                    <li><a href="javascript:void(0);" class="block text-sm font-sora font-light text-navbar-items hover:text-primary transition duration-300 py-2 px-2">Contact</a></li>
+                    <li class="border-t border-gray-200 pt-3 mt-3">
+                        <a href="javascript:void(0);" class="block text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-10 text-center">Je suis agent immobilier</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="block text-sm font-sora font-light py-1.5 bg-blue text-white rounded-lg px-5 text-center">Connexion</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!--Bienvenue, John Smith !-->
+    <section class="py-10 lg:py-20">
+        <div class="container">
+            <h1 class="text-3xl lg:text-banner uppercase text-blue leading-14 text-center font-family-tenor">Bienvenue, agent immobilier !</h1>
+            <div class="bg-blue rounded-4xl py-14 px-5 lg:px-40 mt-16">
+                <p class="text-base font-family-sora leading-5 text-white text-center font-light">Biens pour lesquels vous avez postulé :</p>
+                <div class="flex flex-col md:flex-row items-center gap-5 mt-10 overflow-x-auto lg:overflow-visible">
+                    <div class="w-full lg:w-32 h-40 lg:h-22">
+                        <img src="images/house-1.png" alt="House" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex flex-col gap-5.5 w-full">
+                        <div class="hidden lg:flex flex-col lg:flex-row items-start lg:items-center justify-between gap-3 lg:gap-0">
+                            <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[20%] px-5">Commune</p>
+                            <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[40%] px-5">Adresse</p>
+                            <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[20%] px-5">Prix demandé</p>
+                            <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[20%] px-5">Statut</p>
+                        </div>
+                        <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between lg:border lg:border-white rounded-full py-3 gap-3 lg:gap-0">
+                            <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[20%] border-b lg:border-b-0 lg:border-r border-white px-5 py-2.5"><b class="inline-block lg:hidden mr-3 text-primary">Commune:</b>Liège</p>
+                            <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[40%] border-b lg:border-b-0 lg:border-r border-white px-5 py-2.5"><b class="inline-block lg:hidden mr-3 text-primary">Adresse:</b>Rue des Trixhes 1</p>
+                            <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[20%] border-b lg:border-b-0 lg:border-r border-white px-5 py-2.5"><b class="inline-block lg:hidden mr-3 text-primary">Prix demandé:</b>225.000 €</p>
+                            <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[20%] px-5 py-2.5"><b class="inline-block lg:hidden mr-3 text-primary">Statut:</b>En attente</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row items-center gap-5 mt-10 overflow-x-auto lg:overflow-visible">
+                    <div class="w-full lg:w-32 h-40 lg:h-22">
+                        <img src="images/house-2.png" alt="House" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex flex-col gap-5.5 w-full">
+                        <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between lg:border lg:border-white rounded-full py-3 gap-3 lg:gap-0">
+                            <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[20%] border-b lg:border-b-0 lg:border-r border-white px-5 py-2.5"><b class="inline-block lg:hidden mr-3 text-primary">Commune:</b>Oupeye</p>
+                            <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[40%] border-b lg:border-b-0 lg:border-r border-white px-5 py-2.5"><b class="inline-block lg:hidden mr-3 text-primary">Adresse:</b>Rue Vallée 13</p>
+                            <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[20%] border-b lg:border-b-0 lg:border-r border-white px-5 py-2.5"><b class="inline-block lg:hidden mr-3 text-primary">Prix demandé:</b>En attente</p>
+                            <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[20%] px-5 py-2.5"><b class="inline-block lg:hidden mr-3 text-primary">Statut:</b>Refusé</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row items-center gap-5 mt-10 overflow-x-auto lg:overflow-visible">
+                    <div class="w-full lg:w-32 h-40 lg:h-22">
+                        <img src="images/house-3.png" alt="House" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex flex-col gap-5.5 w-full">
+                        <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between lg:border lg:border-white rounded-full py-3 gap-3 lg:gap-0">
+                            <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[20%] border-b lg:border-b-0 lg:border-r border-white px-5 py-2.5"><b class="inline-block lg:hidden mr-3 text-primary">Commune:</b>Fléron</p>
+                            <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[40%] border-b lg:border-b-0 lg:border-r border-white px-5 py-2.5"><b class="inline-block lg:hidden mr-3 text-primary">Adresse:</b>Rue des Grands Prés 18</p>
+                            <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[20%] border-b lg:border-b-0 lg:border-r border-white px-5 py-2.5"><b class="inline-block lg:hidden mr-3 text-primary">Prix demandé:</b>225.000 €</p>
+                            <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[20%] px-5 py-2.5"><b class="inline-block lg:hidden mr-3 text-primary">Statut:</b>Refusé</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row items-center gap-5 mt-10 overflow-x-auto lg:overflow-visible">
+                    <div class="w-full lg:w-32 h-40 lg:h-22">
+                        <img src="images/house-4.png" alt="House" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex flex-col gap-5.5 w-full">
+                        <div class="flex flex-col lg:flex-row bg-transparent lg:bg-primary items-start lg:items-center justify-between lg:border lg:border-primary rounded-full py-3 gap-3 lg:gap-0 relative">
+                            <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[20%] border-b lg:border-b-0 lg:border-r border-white px-5 py-2.5"><b class="inline-block lg:hidden mr-3 text-primary">Commune:</b>Soumagne</p>
+                            <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[40%] border-b lg:border-b-0 lg:border-r border-white px-5 py-2.5"><b class="inline-block lg:hidden mr-3 text-primary">Adresse:</b>Rue Jean Hermesse 2A</p>
+                            <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[20%] border-b lg:border-b-0 lg:border-r border-white px-5 py-2.5"><b class="inline-block lg:hidden mr-3 text-primary">Prix demandé:</b>225.000 €</p>
+                            <p class="text-sm font-family-sora text-white leading-4 w-full lg:w-[20%] px-5 py-2.5"><b class="inline-block lg:hidden mr-3 text-primary">Statut:</b>Accepté</p>
+                            <button class="text-sm px-5 font-family-sora py-2.5 flex items-center justify-center leading-4 bg-white text-blue rounded-full w-40 h-7.5 lg:absolute lg:-right-24 lg:top-1/2 lg:-translate-y-1/2">Contacter</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Biens disponibles-->
+    <section class="pt-0 lg:pt-10 pb-40">
+        <div class="container">
+            <h1 class="text-3xl lg:text-banner uppercase text-blue leading-14 text-center font-family-tenor">Biens disponibles</h1>
+            <div class="p-11 rounded-[20px] bg-blue/10 mt-8 grid grid-cols-12 items-center justify-between">
+                <div class="col-span-6 lg:col-span-2 flex flex-col gap-3 pr-0 lg:pr-10 lg:border-r lg:border-black">
+                    <label for="prix-min" class="text-sm font-family-sora leading-5 text-blue">Prix min</label>
+                    <div class="relative">
+                        <select name="prix-min" id="prix-min" class="appearance-none w-full focus:outline-none">
+                            <option value="100.000 €">100.000 €</option>
+                            <option value="100.000 €">200.000 €</option>
+                            <option value="100.000 €">300.000 €</option>
+                        </select>
+                        <img src="images/caret-down.svg" alt="Caret Down" class="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none">
+                    </div>
+                </div>
+                <div class="col-span-6 lg:col-span-2 flex flex-col gap-3 px-0 lg:px-8 lg:border-r lg:border-black">
+                    <label for="prix-max" class="text-sm font-family-sora leading-5 text-blue">Prix max</label>
+                    <div class="relative">
+                        <select name="prix-max" id="prix-max" class="appearance-none w-full focus:outline-none">
+                            <option value="100.000 €">100.000 €</option>
+                            <option value="100.000 €">200.000 €</option>
+                            <option value="100.000 €">300.000 €</option>
+                        </select>
+                        <img src="images/caret-down.svg" alt="Caret Down" class="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none">
+                    </div>
+                </div>
+                <div class="col-span-12 lg:col-span-4 flex flex-col gap-3 px-0 lg:px-8 mt-5 lg:mt-0">
+                    <div class="flex flex-col gap-3">
+                        <p class="text-sm font-family-sora leading-5 text-blue">Codes postaux (séparés par une virgule)</p>
+                        <input type="text" placeholder="4020, 4030, 4600" class="focus:outline-none">
+                    </div>
+                </div>
+                <div class="col-span-12 lg:col-span-4 flex flex-col gap-3 mt-5 lg:mt-0">
+                    <div class="flex flex-col lg:flex-row items-center gap-5">
+                        <a href="#" class="w-full lg:w-38 h-11 bg-blue text-white text-sm font-family-sora rounded-4xl flex items-center justify-center">Chercher</a>
+                        <div class="relative w-full">
+                            <select name="Trier" id="Trier" class="appearance-none w-full focus:outline-none bg-white border border-primary py-3 px-6 rounded-3xl text-sm">
+                                <option value="Trier par le plus récent d'abord">Trier par le plus récent d'abord</option>
+                                <option value="Trier par le plus récent d'abord">Trier par le plus récent d'abord</option>
+                                <option value="Trier par le plus récent d'abord">Trier par le plus récent d'abord</option>
+                            </select>
+                            <img src="images/caret-down.svg" alt="Caret Down" class="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col items-center gap-5 mt-10 overflow-x-auto lg:overflow-visible max-w-[80%] mx-auto">
+                <div class="flex items-center w-full gap-5 flex-col md:flex-row">
+                    <div class="w-full lg:w-32 h-40 lg:h-22">
+                        <img src="images/house-1.png" alt="House" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex flex-col gap-5.5 w-full">
+                        <div class="hidden lg:flex flex-col lg:flex-row items-start lg:items-center justify-between gap-3 lg:gap-0">
+                            <p class="text-sm font-family-sora text-blue leading-4 w-full lg:w-[25%] px-5">Commune</p>
+                            <p class="text-sm font-family-sora text-blue leading-4 w-full lg:w-[40%]">Adresse</p>
+                            <p class="text-sm font-family-sora text-blue leading-4 w-full lg:w-[20%]">Prix demandé</p>
+                            <p class="text-sm font-family-sora text-blue leading-4 w-full lg:w-[20%]">&nbsp;</p>
+                        </div>
+                        <div class="flex flex-col gap-5.5 w-full">
+                            <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between lg:border lg:border-blue rounded-full py-3 gap-3 lg:gap-0">
+                                <p class="text-sm font-family-sora text-blue leading-4 w-full lg:w-[20%] border-b lg:border-b-0 lg:border-r border-blue px-5 py-2.5"><b class="inline-block lg:hidden mr-3 text-primary">Commune:</b>Oupeye</p>
+                                <p class="text-sm font-family-sora text-blue leading-4 w-full lg:w-[40%] border-b lg:border-b-0 lg:border-r border-blue px-5 py-2.5"><b class="inline-block lg:hidden mr-3 text-primary">Adresse:</b>Rue Vallée 13</p>
+                                <p class="text-sm font-family-sora text-blue leading-4 w-full lg:w-[20%] border-b lg:border-b-0 lg:border-r border-blue px-5 py-2.5"><b class="inline-block lg:hidden mr-3 text-primary">Prix demandé:</b>225.000 €</p>
+                                <div class="w-full lg:w-[20%] px-5"><button class="text-sm px-5 font-family-sora py-2.5 flex items-center justify-center leading-4 h-full bg-primary text-white rounded-full w-full">Postuler</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center w-full gap-5 flex-col md:flex-row">
+                    <div class="w-full lg:w-32 h-40 lg:h-22">
+                        <img src="images/house-2.png" alt="House" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex flex-col gap-5.5 w-full">
+                        <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between lg:border lg:border-blue rounded-full py-3 gap-3 lg:gap-0">
+                            <p class="text-sm font-family-sora text-blue leading-4 w-full lg:w-[20%] border-b lg:border-b-0 lg:border-r border-blue px-5 py-2.5"><b class="inline-block lg:hidden mr-3 text-primary">Commune:</b>Oupeye</p>
+                            <p class="text-sm font-family-sora text-blue leading-4 w-full lg:w-[40%] border-b lg:border-b-0 lg:border-r border-blue px-5 py-2.5"><b class="inline-block lg:hidden mr-3 text-primary">Adresse:</b>Rue Vallée 13</p>
+                            <p class="text-sm font-family-sora text-blue leading-4 w-full lg:w-[20%] border-b lg:border-b-0 lg:border-r border-blue px-5 py-2.5"><b class="inline-block lg:hidden mr-3 text-primary">Prix demandé:</b>225.000 €</p>
+                            <div class="w-full lg:w-[20%] px-5"><button class="text-sm px-5 font-family-sora py-2.5 flex items-center justify-center leading-4 h-full bg-primary text-white rounded-full w-full">Postuler</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center w-full gap-5 flex-col md:flex-row">
+                    <div class="w-full lg:w-32 h-40 lg:h-22">
+                        <img src="images/house-3.png" alt="House" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex flex-col gap-5.5 w-full">
+                        <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between lg:border lg:border-blue rounded-full py-3 gap-3 lg:gap-0">
+                            <p class="text-sm font-family-sora text-blue leading-4 w-full lg:w-[20%] border-b lg:border-b-0 lg:border-r border-blue px-5 py-2.5"><b class="inline-block lg:hidden mr-3 text-primary">Commune:</b>Oupeye</p>
+                            <p class="text-sm font-family-sora text-blue leading-4 w-full lg:w-[40%] border-b lg:border-b-0 lg:border-r border-blue px-5 py-2.5"><b class="inline-block lg:hidden mr-3 text-primary">Adresse:</b>Rue Vallée 13</p>
+                            <p class="text-sm font-family-sora text-blue leading-4 w-full lg:w-[20%] border-b lg:border-b-0 lg:border-r border-blue px-5 py-2.5"><b class="inline-block lg:hidden mr-3 text-primary">Prix demandé:</b>225.000 €</p>
+                            <div class="w-full lg:w-[20%] px-5"><button class="text-sm px-5 font-family-sora py-2.5 flex items-center justify-center leading-4 h-full bg-primary text-white rounded-full w-full">Postuler</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center w-full gap-5 flex-col md:flex-row">
+                    <div class="w-full lg:w-32 h-40 lg:h-22">
+                        <img src="images/house-4.png" alt="House" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex flex-col gap-5.5 w-full">
+                        <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between lg:border lg:border-blue rounded-full py-3 gap-3 lg:gap-0">
+                            <p class="text-sm font-family-sora text-blue leading-4 w-full lg:w-[20%] border-b lg:border-b-0 lg:border-r border-blue px-5 py-2.5"><b class="inline-block lg:hidden mr-3 text-primary">Commune:</b>Oupeye</p>
+                            <p class="text-sm font-family-sora text-blue leading-4 w-full lg:w-[40%] border-b lg:border-b-0 lg:border-r border-blue px-5 py-2.5"><b class="inline-block lg:hidden mr-3 text-primary">Adresse:</b>Rue Vallée 13</p>
+                            <p class="text-sm font-family-sora text-blue leading-4 w-full lg:w-[20%] border-b lg:border-b-0 lg:border-r border-blue px-5 py-2.5"><b class="inline-block lg:hidden mr-3 text-primary">Prix demandé:</b>225.000 €</p>
+                            <div class="w-full lg:w-[20%] px-5"><button class="text-sm px-5 font-family-sora py-2.5 flex items-center justify-center leading-4 h-full bg-primary text-white rounded-full w-full">Postuler</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center w-full gap-5 flex-col md:flex-row">
+                    <div class="w-full lg:w-32 h-40 lg:h-22">
+                        <img src="images/house-5.png" alt="House" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex flex-col gap-5.5 w-full">
+                        <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between lg:border lg:border-blue rounded-full py-3 gap-3 lg:gap-0">
+                            <p class="text-sm font-family-sora text-blue leading-4 w-full lg:w-[20%] border-b lg:border-b-0 lg:border-r border-blue px-5 py-2.5"><b class="inline-block lg:hidden mr-3 text-primary">Commune:</b>Oupeye</p>
+                            <p class="text-sm font-family-sora text-blue leading-4 w-full lg:w-[40%] border-b lg:border-b-0 lg:border-r border-blue px-5 py-2.5"><b class="inline-block lg:hidden mr-3 text-primary">Adresse:</b>Rue Vallée 13</p>
+                            <p class="text-sm font-family-sora text-blue leading-4 w-full lg:w-[20%] border-b lg:border-b-0 lg:border-r border-blue px-5 py-2.5"><b class="inline-block lg:hidden mr-3 text-primary">Prix demandé:</b>225.000 €</p>
+                            <div class="w-full lg:w-[20%] px-5"><button class="text-sm px-5 font-family-sora py-2.5 flex items-center justify-center leading-4 h-full bg-primary text-white rounded-full w-full">Postuler</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center w-full gap-5 flex-col md:flex-row">
+                    <div class="w-full lg:w-32 h-40 lg:h-22">
+                        <img src="images/house-6.png" alt="House" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex flex-col gap-5.5 w-full">
+                        <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between lg:border lg:border-blue rounded-full py-3 gap-3 lg:gap-0">
+                            <p class="text-sm font-family-sora text-blue leading-4 w-full lg:w-[20%] border-b lg:border-b-0 lg:border-r border-blue px-5 py-2.5"><b class="inline-block lg:hidden mr-3 text-primary">Commune:</b>Oupeye</p>
+                            <p class="text-sm font-family-sora text-blue leading-4 w-full lg:w-[40%] border-b lg:border-b-0 lg:border-r border-blue px-5 py-2.5"><b class="inline-block lg:hidden mr-3 text-primary">Adresse:</b>Rue Vallée 13</p>
+                            <p class="text-sm font-family-sora text-blue leading-4 w-full lg:w-[20%] border-b lg:border-b-0 lg:border-r border-blue px-5 py-2.5"><b class="inline-block lg:hidden mr-3 text-primary">Prix demandé:</b>225.000 €</p>
+                            <div class="w-full lg:w-[20%] px-5"><button class="text-sm px-5 font-family-sora py-2.5 flex items-center justify-center leading-4 h-full bg-primary text-white rounded-full w-full">Postuler</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center w-full gap-5 flex-col md:flex-row">
+                    <div class="w-full lg:w-32 h-40 lg:h-22">
+                        <img src="images/house-7.png" alt="House" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex flex-col gap-5.5 w-full">
+                        <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between lg:border lg:border-blue rounded-full py-3 gap-3 lg:gap-0">
+                            <p class="text-sm font-family-sora text-blue leading-4 w-full lg:w-[20%] border-b lg:border-b-0 lg:border-r border-blue px-5 py-2.5"><b class="inline-block lg:hidden mr-3 text-primary">Commune:</b>Oupeye</p>
+                            <p class="text-sm font-family-sora text-blue leading-4 w-full lg:w-[40%] border-b lg:border-b-0 lg:border-r border-blue px-5 py-2.5"><b class="inline-block lg:hidden mr-3 text-primary">Adresse:</b>Rue Vallée 13</p>
+                            <p class="text-sm font-family-sora text-blue leading-4 w-full lg:w-[20%] border-b lg:border-b-0 lg:border-r border-blue px-5 py-2.5"><b class="inline-block lg:hidden mr-3 text-primary">Prix demandé:</b>225.000 €</p>
+                            <div class="w-full lg:w-[20%] px-5"><button class="text-sm px-5 font-family-sora py-2.5 flex items-center justify-center leading-4 h-full bg-primary text-white rounded-full w-full">Postuler</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center justify-center space-x-4.5 mt-5 lg:mt-18">
+                <button class="cursor-pointer"><img src="images/caret-left.svg" alt="Caret Left"></button>
+                <button class="font-family-sora cursor-pointer text-base text-primary">1</button>
+                <button class="font-family-sora cursor-pointer text-base text-blue">2</button>
+                <button class="font-family-sora cursor-pointer text-base text-blue">3</button>
+                <button class="font-family-sora cursor-pointer text-base text-blue">4</button>
+                <button class="cursor-pointer"><img src="images/caret-right.svg" alt="Caret Right"></button>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="relative">
+        <div class="container relative z-50">
+            <div class="grid grid-cols-3 space-x-30 items-center">
+                <div class="col-span-3 md:col-span-1">
+                    <a href="javascript:void(0);"><img src="images/logo-white.svg" alt="Casalink"></a>
+                </div>
+                <div class="col-span-3 md:col-span-1">
+                    <ul class="flex flex-col gap-2 lg:gap-5">
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light leading-5 text-white hover:text-primary transition duration-300">Accueil</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light leading-5 text-white hover:text-primary transition duration-300">Comment ça marche</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light leading-5 text-white hover:text-primary transition duration-300">FAQ</a></li>
+                        <li><a href="javascript:void(0);" class="text-sm font-sora font-light leading-5 text-white hover:text-primary transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-3 md:col-span-1 mt-5 lg:mt-0">
+                    <h2 class="text-lg md:text-2xl text-white font-family-tenor uppercase leading-8">Suivez-nous sur les <br> réseaux</h2>
+                    <ul class="flex items-center gap-2.5 mt-2.5">
+                        <li><a href="javascript:void(0);"><img src="images/fb.svg" alt="Facebook Icon"></a></li>
+                        <li><a href="javascript:void(0);"><img src="images/insta.svg" alt="Instagram Icon"></a></li>
+                        <li><a href="javascript:void(0);"><img src="images/youtube.svg" alt="Youtube Icon"></a></li>
+                        <li><a href="javascript:void(0);"><img src="images/linkedin.svg" alt="Linkedin Icon"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex items-center justify-center pb-7.5 mt-5 lg:mt-0">
+                <small class="text-sm leading-5 font-sora text-white/50">Copyright © 2025 <a href="javascript:void(0);">CasaLink</a> | <a href="javascript:void(0);">Vie privée</a> | Website by <a href="javascript:void(0);">Flexvision</a></small>
+            </div>
+        </div>
+        <div class="absolute -top-8 lg:-top-24 left-0 right-0 bottom-0">
+            <img src="images/eclipse.svg" alt="Eclipse" class="h-full w-full object-cover">
+        </div>
+        <div class="absolute h-3/5 left-0 right-0 bottom-0 bg-blue">
+        </div>
+    </footer>
+</body>
+<script src="accordion.js"></script>
+<script src="header.js"></script>
+<script src="checkbox.js"></script>
+<script src="popup.js"></script>
+</html>
